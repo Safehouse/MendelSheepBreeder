@@ -1,5 +1,7 @@
 ﻿Friend Class Genom
 
+#Region "Properties"
+
     Friend Property Naturalness As Byte
 
         Get
@@ -87,6 +89,33 @@
 
     Private _Hue As Byte
 
+#End Region
+
+#Region "New"
+
+    Friend Sub New()
+
+    End Sub
+
+    Friend Sub New(ByVal Genom As Genom)
+
+        _Naturalness = Genom.Naturalness
+        _Colourness = Genom.Colourness
+        _Lightness = Genom.Lightness
+        _Hue = Genom.Hue
+
+    End Sub
+
+    Friend Sub New(ByVal Naturalness As Byte, ByVal Colourness As Byte, ByVal Lightness As Byte, ByVal Hue As Byte)
+
+        _Naturalness = Naturalness
+        _Colourness = Colourness
+        _Lightness = Lightness
+        _Hue = Hue
+
+    End Sub
+
+#End Region
 
 
 
