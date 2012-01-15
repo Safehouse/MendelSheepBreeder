@@ -1,4 +1,4 @@
-﻿Friend Class Genom
+﻿Friend Class Genome
 
 #Region "Properties"
 
@@ -97,7 +97,7 @@
 
     End Sub
 
-    Friend Sub New(ByVal Genom As Genom)
+    Friend Sub New(ByVal Genom As Genome)
 
         _Naturalness = Genom.Naturalness
         _Colourness = Genom.Colourness
