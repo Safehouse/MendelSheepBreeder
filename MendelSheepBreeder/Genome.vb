@@ -4,92 +4,64 @@
 
 #Region "Properties"
 
-        Friend Property Naturalness As Byte
+        Friend Property Naturalness As Allele
 
             Get
                 Return _Naturalness
             End Get
 
-            Set(value As Byte)
-                Select Case value
-                    Case 0
-                        _Naturalness = 0
-                    Case 1
-                        _Naturalness = 1
-                    Case Else
-                        Throw New ArgumentOutOfRangeException("Naturalness", "Has to be either 0 or 1")
-                End Select
+            Set(value As Allele)
+                _Naturalness = value
             End Set
 
         End Property
 
-        Private _Naturalness As Byte
+        Private _Naturalness As Allele
 
 
-        Friend Property Colourness As Byte
+        Friend Property Colourness As Allele
 
             Get
                 Return _Colourness
             End Get
 
-            Set(value As Byte)
-                Select Case value
-                    Case 0
-                        _Colourness = 0
-                    Case 1
-                        _Colourness = 1
-                    Case Else
-                        Throw New ArgumentOutOfRangeException("Colourness", "Has to be either 0 or 1")
-                End Select
+            Set(value As Allele)
+                _Colourness = value
             End Set
 
         End Property
 
-        Private _Colourness As Byte
+        Private _Colourness As Allele
 
 
-        Friend Property Lightness As Byte
+        Friend Property Lightness As Allele
 
             Get
                 Return _Lightness
             End Get
 
-            Set(value As Byte)
-                Select Case value
-                    Case 0
-                        _Lightness = 0
-                    Case 1
-                        _Lightness = 1
-                    Case Else
-                        Throw New ArgumentOutOfRangeException("Lightness", "Has to be either 0 or 1")
-                End Select
+            Set(value As Allele)
+                _Lightness = value
             End Set
 
         End Property
 
-        Private _Lightness As Byte
+        Private _Lightness As Allele
 
 
-        Friend Property Hue As Byte
+        Friend Property Hue As Allele
 
             Get
                 Return _Hue
             End Get
 
-            Set(value As Byte)
-                Select Case value
-                    Case 0
-                        _Hue = 0
-                    Case 1
-                        _Hue = 1
-                    Case Else
-                        Throw New ArgumentOutOfRangeException("Hue", "Has to be either 0 or 1")
-                End Select
+            Set(value As Allele)
+                _Hue = value
             End Set
 
         End Property
 
-        Private _Hue As Byte
+        Private _Hue As Allele
 
 #End Region
 
@@ -108,12 +80,12 @@
 
         End Sub
 
-        Friend Sub New(ByVal Naturalness As Byte, ByVal Colourness As Byte, ByVal Lightness As Byte, ByVal Hue As Byte)
+        Friend Sub New(ByVal Naturalness As Allele, ByVal Colourness As Allele, ByVal Lightness As Allele, ByVal Hue As Allele)
 
-            _Naturalness = Naturalness
-            _Colourness = Colourness
-            _Lightness = Lightness
-            _Hue = Hue
+            Me.Naturalness = Naturalness
+            Me.Colourness = Colourness
+            Me.Lightness = Lightness
+            Me.Hue = Hue
 
         End Sub
 
