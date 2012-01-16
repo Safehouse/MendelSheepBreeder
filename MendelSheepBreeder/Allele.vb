@@ -49,6 +49,22 @@
 
 #End Region
 
+
+#Region "New"
+
+        Friend Sub New()
+
+        End Sub
+
+        Friend Sub New(ByVal Gene1 As Byte, ByVal Gene2 As Byte)
+
+            Me.Gene1 = Gene1
+            Me.Gene2 = Gene2
+
+        End Sub
+
+#End Region
+
     End Class
 
 End Namespace
