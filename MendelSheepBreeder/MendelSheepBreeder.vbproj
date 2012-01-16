@@ -8,8 +8,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DE0824EA-B60A-41A2-BA5B-2AE3EDB286CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MendelSheepBreeder.My.MyApplication</StartupObject>
-    <RootNamespace>MendelSheepBreeder</RootNamespace>
+    <StartupObject>ch.Morrolan.Minecraft.MendelSheepBreeder.My.MyApplication</StartupObject>
+    <RootNamespace>ch.Morrolan.Minecraft.MendelSheepBreeder</RootNamespace>
     <AssemblyName>MendelSheepBreeder</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -66,14 +66,15 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFile1.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="Allele.vb" />
+    <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MendelSheep.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -89,6 +90,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Phenotype.vb" />
+    <Compile Include="PhenotypeMap.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

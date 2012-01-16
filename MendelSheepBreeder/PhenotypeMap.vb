@@ -6,7 +6,7 @@
 
         ' Maps Genome-values (actually only the resulting ones, that is after taking into to account recessive / dominant mechanisms) to Phenotypes.
         ' Order of genomes is: Naturalness -Colourness - Lightness - Hue.
-        Map(0, 0, 0, 0) = Phenotype.Blue)
+        Map(0, 0, 0, 0) = Phenotype.Blue
         Map(0, 0, 0, 1) = Phenotype.Purple
         Map(0, 0, 1, 0) = Phenotype.LightBlue
         Map(0, 0, 1, 1) = Phenotype.Cyan

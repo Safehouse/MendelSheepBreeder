@@ -1,7 +1,7 @@
 ﻿Friend Enum Phenotype
 
     White
-    LightGray
+    LightGrey
     Grey
     Black
     Brown
