@@ -4,20 +4,20 @@
 
 #Region "Properties"
 
-        Friend Property Genom As Genome
+        Friend Property Genome As Genome
 
             Get
-                Return _Genom
+                Return _Genome
             End Get
 
             Set(value As Genome)
-                _Genom = value
+                _Genome = value
                 UpdatePhenotype()
             End Set
 
         End Property
 
-        Private _Genom As Genome
+        Private _Genome As Genome
 
 
         Friend ReadOnly Property Phenotype As Phenotype
@@ -34,10 +34,25 @@
 
 #Region "New"
 
+        Friend Sub New()
+
+        End Sub
+
+        Friend Sub New(ByVal Genome As Genome)
+
+            Me.Genome = Genome
+
+        End Sub
+
 #End Region
 
-
+        ''' <summary>
+        ''' Updates the phenotype according to the PhenotypeMap by using the specified genome.
+        ''' </summary>
+        ''' <remarks></remarks>
         Private Sub UpdatePhenotype()
+
+            Me._Phenotype = PhenotypeMap.GetPhenoype(Me.Genome)
 
         End Sub
 
