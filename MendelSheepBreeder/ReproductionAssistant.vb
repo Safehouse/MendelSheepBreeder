@@ -25,6 +25,34 @@
         ''' <remarks></remarks>
         Friend Function GetGenomes(ByVal Genome1 As Genome, ByVal Genome2 As Genome) As List(Of Genome)
 
+            Dim ListOfGenomes As New List(Of Genome)
+
+            Dim ListOfAllelesNaturalness As List(Of Allele) = GetAllelesNaturalness(Genome1.Naturalness, Genome2.Naturalness)
+            Dim ListOfAllelesColourness As List(Of Allele) = GetAllelesColourness(Genome1.Colourness, Genome2.Colourness)
+            Dim ListOfAllelesLightness As List(Of Allele) = GetAllelesLightness(Genome1.Lightness, Genome2.Lightness)
+            Dim ListOfAllelesHue As List(Of Allele) = GetAllelesHue(Genome1.Hue, Genome2.Hue)
+
+            For Each AlleleNaturalness In ListOfAllelesNaturalness
+
+                For Each AlleleColourness In ListOfAllelesColourness
+
+                    For Each AlleleLightness In ListOfAllelesLightness
+
+                        For Each AlleleHue In ListOfAllelesHue
+
+                            ListOfGenomes.Add(New Genome(AlleleNaturalness, AlleleColourness, AlleleLightness, AlleleHue))
+
+                        Next
+
+                    Next
+
+                Next
+
+            Next
+
+
+            Return ListOfGenomes
+
         End Function
 
 
