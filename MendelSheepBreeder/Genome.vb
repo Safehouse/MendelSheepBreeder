@@ -71,12 +71,12 @@
 
         End Sub
 
-        Friend Sub New(ByVal Genom As Genome)
+        Friend Sub New(ByVal Genome As Genome)
 
-            _Naturalness = Genom.Naturalness
-            _Colourness = Genom.Colourness
-            _Lightness = Genom.Lightness
-            _Hue = Genom.Hue
+            Naturalness = Genome.Naturalness
+            Colourness = Genome.Colourness
+            Lightness = Genome.Lightness
+            Hue = Genome.Hue
 
         End Sub
 
@@ -91,6 +91,10 @@
 
 #End Region
 
+
+#Region "DoStuff"
+
+#End Region
 
 
     End Class
