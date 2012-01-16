@@ -1,20 +1,24 @@
-﻿Friend Enum Phenotype
+﻿Namespace ch.Morrolan.Minecraft.MendelSheepBreeder
 
-    White
-    LightGrey
-    Grey
-    Black
-    Brown
-    Pink
-    Red
-    Orange
-    Yellow
-    Lime
-    Green
-    LightBlue
-    Cyan
-    Blue
-    Purple
-    Magenta
+    Friend Enum Phenotype
 
-End Enum
+        White
+        LightGrey
+        Grey
+        Black
+        Brown
+        Pink
+        Red
+        Orange
+        Yellow
+        Lime
+        Green
+        LightBlue
+        Cyan
+        Blue
+        Purple
+        Magenta
+
+    End Enum
+
+End Namespace
