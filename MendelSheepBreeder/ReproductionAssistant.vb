@@ -29,19 +29,55 @@
 
 
 
-        Friend Function GetGenomesNaturalness() As List(Of Genome)
+        Friend Function GetAllelesNaturalness(ByVal Naturalness1 As Allele, ByVal Naturalness2 As Allele) As List(Of Allele)
+
+            Dim ListOfAllelesNaturalness As New List(Of Allele)
+
+            ListOfAllelesNaturalness.Add(New Allele(Naturalness1.Gene1, Naturalness2.Gene1))
+            ListOfAllelesNaturalness.Add(New Allele(Naturalness1.Gene1, Naturalness2.Gene2))
+            ListOfAllelesNaturalness.Add(New Allele(Naturalness1.Gene2, Naturalness2.Gene1))
+            ListOfAllelesNaturalness.Add(New Allele(Naturalness1.Gene2, Naturalness2.Gene2))
+
+            Return ListOfAllelesNaturalness
 
         End Function
 
-        Friend Function GetGenomesColourness() As List(Of Genome)
+        Friend Function GetAllelesColourness(ByVal Colourness1 As Allele, ByVal Colourness2 As Allele) As List(Of Allele)
+
+            Dim ListOfAllelesColourness As New List(Of Allele)
+
+            ListOfAllelesColourness.Add(New Allele(Colourness1.Gene1, Colourness2.Gene1))
+            ListOfAllelesColourness.Add(New Allele(Colourness1.Gene1, Colourness2.Gene2))
+            ListOfAllelesColourness.Add(New Allele(Colourness1.Gene2, Colourness2.Gene1))
+            ListOfAllelesColourness.Add(New Allele(Colourness1.Gene2, Colourness2.Gene2))
+
+            Return ListOfAllelesColourness
 
         End Function
 
-        Friend Function GetGenomesLightness() As List(Of Genome)
+        Friend Function GetAllelesLightness(ByVal Lightness1 As Allele, ByVal Lightness2 As Allele) As List(Of Allele)
+
+            Dim ListOfAllelesLightness As New List(Of Allele)
+
+            ListOfAllelesLightness.Add(New Allele(Lightness1.Gene1, Lightness2.Gene1))
+            ListOfAllelesLightness.Add(New Allele(Lightness1.Gene1, Lightness2.Gene2))
+            ListOfAllelesLightness.Add(New Allele(Lightness1.Gene2, Lightness2.Gene1))
+            ListOfAllelesLightness.Add(New Allele(Lightness1.Gene2, Lightness2.Gene2))
+
+            Return ListOfAllelesLightness
 
         End Function
 
-        Friend Function GetGenomesHue() As List(Of Genome)
+        Friend Function GetAllelesHue(ByVal Hue1 As Allele, ByVal Hue2 As Allele) As List(Of Allele)
+
+            Dim ListOfAllelesHue As New List(Of Allele)
+
+            ListOfAllelesHue.Add(New Allele(Hue1.Gene1, Hue2.Gene1))
+            ListOfAllelesHue.Add(New Allele(Hue1.Gene1, Hue2.Gene2))
+            ListOfAllelesHue.Add(New Allele(Hue1.Gene2, Hue2.Gene1))
+            ListOfAllelesHue.Add(New Allele(Hue1.Gene2, Hue2.Gene2))
+
+            Return ListOfAllelesHue
 
         End Function
 
