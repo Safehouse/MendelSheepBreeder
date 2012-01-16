@@ -1,32 +1,55 @@
 ﻿Namespace ch.Morrolan.Minecraft.MendelSheepBreeder
 
-    Friend Class PhenotypeMap
+    Friend Module PhenotypeMap
 
-        Friend Map(,,,) As Phenotype
+        Private _Map(,,,) As Phenotype
 
-        Friend Sub New()
+
+        Private Sub Initialize()
 
             ' Maps Genome-values (actually only the resulting ones, that is after taking into to account recessive / dominant mechanisms) to Phenotypes.
             ' Order of genomes is: Naturalness -Colourness - Lightness - Hue.
-            Map(0, 0, 0, 0) = Phenotype.Blue
-            Map(0, 0, 0, 1) = Phenotype.Purple
-            Map(0, 0, 1, 0) = Phenotype.LightBlue
-            Map(0, 0, 1, 1) = Phenotype.Cyan
-            Map(0, 1, 0, 0) = Phenotype.Brown
-            Map(0, 1, 0, 1) = Phenotype.Purple
-            Map(0, 1, 1, 0) = Phenotype.Red
-            Map(0, 1, 1, 1) = Phenotype.Pink
-            Map(1, 0, 0, 0) = Phenotype.Green
-            Map(1, 0, 0, 1) = Phenotype.Orange
-            Map(1, 0, 1, 0) = Phenotype.Green
-            Map(1, 0, 1, 1) = Phenotype.Yellow
-            Map(1, 1, 0, 0) = Phenotype.Black
-            Map(1, 1, 0, 1) = Phenotype.LightGrey
-            Map(1, 1, 1, 0) = Phenotype.Grey
-            Map(1, 1, 1, 1) = Phenotype.White
+            _Map(0, 0, 0, 0) = Phenotype.Blue
+            _Map(0, 0, 0, 1) = Phenotype.Purple
+            _Map(0, 0, 1, 0) = Phenotype.LightBlue
+            _Map(0, 0, 1, 1) = Phenotype.Cyan
+            _Map(0, 1, 0, 0) = Phenotype.Brown
+            _Map(0, 1, 0, 1) = Phenotype.Purple
+            _Map(0, 1, 1, 0) = Phenotype.Red
+            _Map(0, 1, 1, 1) = Phenotype.Pink
+            _Map(1, 0, 0, 0) = Phenotype.Green
+            _Map(1, 0, 0, 1) = Phenotype.Orange
+            _Map(1, 0, 1, 0) = Phenotype.Green
+            _Map(1, 0, 1, 1) = Phenotype.Yellow
+            _Map(1, 1, 0, 0) = Phenotype.Black
+            _Map(1, 1, 0, 1) = Phenotype.LightGrey
+            _Map(1, 1, 1, 0) = Phenotype.Grey
+            _Map(1, 1, 1, 1) = Phenotype.White
 
         End Sub
 
-    End Class
+        ''' <summary>
+        ''' Takes the genome, calculates what the resulting genome is and returns the phenotype.
+        ''' </summary>
+        ''' <param name="Genome"></param>
+        ''' <returns>Returns the phenotype corresponding to the genome.</returns>
+        ''' <remarks></remarks>
+        Friend Function GetPhenoype(ByVal Genome As Genome) As Phenotype
+
+            Dim ResultingNaturalness As Byte
+            Dim ResultingColourness As Byte
+            Dim ResultingLightness As Byte
+            Dim ResultingHue As Byte
+
+            ResultingNaturalness = Genome.Naturalness.Gene1 Or Genome.Naturalness.Gene2
+            ResultingColourness = Genome.Colourness.Gene1 Or Genome.Colourness.Gene2
+            ResultingLightness = Genome.Lightness.Gene1 Or Genome.Lightness.Gene2
+            ResultingHue = Genome.Hue.Gene1 Or Genome.Hue.Gene2
+
+            Return _Map(ResultingNaturalness, ResultingColourness, ResultingLightness, ResultingHue)
+
+        End Function
+
+    End Module
 
 End Namespace
