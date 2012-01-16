@@ -13,6 +13,18 @@
         ''' <remarks></remarks>
         Friend Function GetChildren(ByVal Parent1 As MendelSheep, ByVal Parent2 As MendelSheep) As List(Of MendelSheep)
 
+            Dim ListOfChildren As New List(Of MendelSheep)
+
+            Dim ListOfGenomes As List(Of Genome) = GetGenomes(Parent1.Genome, Parent2.Genome)
+
+            For Each Genome In ListOfGenomes
+
+                ListOfChildren.Add(New MendelSheep(Genome))
+
+            Next
+
+            Return ListOfChildren
+
         End Function
 
 
