@@ -15,14 +15,58 @@ Public Class frmMain
     ''' <remarks></remarks>
     Private Sub UpdateParents()
 
-        Dim Naturalness As Allele
-        Dim Colourness As Allele
-        Dim Lightness As Allele
-        Dim Hue As Allele
+        Dim Naturalness As New Allele
+        Dim Colourness As New Allele
+        Dim Lightness As New Allele
+        Dim Hue As New Allele
 
         Dim Genome As New Genome
 
-        Naturalness = New Allele(nmr
+
+        ' Get the specified information for the first parent.
+        Naturalness.Gene1 = CByte(nmrParentsGenome1Naturalness1.Value)
+        Naturalness.Gene2 = CByte(nmrParentsGenome1Naturalness2.Value)
+
+        Colourness.Gene1 = CByte(nmrParentsGenome1Colourness1.Value)
+        Colourness.Gene2 = CByte(nmrParentsGenome1Colourness2.Value)
+
+        Lightness.Gene1 = CByte(nmrParentsGenome1Lightness1.Value)
+        Lightness.Gene2 = CByte(nmrParentsGenome1Lightness2.Value)
+
+        Hue.Gene1 = CByte(nmrParentsGenome1Hue1.Value)
+        Hue.Gene2 = CByte(nmrParentsGenome1Hue2.Value)
+
+        Genome.Naturalness = Naturalness
+        Genome.Colourness = Colourness
+        Genome.Lightness = Lightness
+        Genome.Hue = Hue
+
+        Parent1.Genome = Genome
+
+
+        ' Get the specified information for the second parent.
+        Naturalness.Gene1 = CByte(nmrParentsGenome2Naturalness1.Value)
+        Naturalness.Gene2 = CByte(nmrParentsGenome2Naturalness2.Value)
+
+        Colourness.Gene1 = CByte(nmrParentsGenome2Colourness1.Value)
+        Colourness.Gene2 = CByte(nmrParentsGenome2Colourness2.Value)
+
+        Lightness.Gene1 = CByte(nmrParentsGenome2Lightness1.Value)
+        Lightness.Gene2 = CByte(nmrParentsGenome2Lightness2.Value)
+
+        Hue.Gene1 = CByte(nmrParentsGenome2Hue1.Value)
+        Hue.Gene2 = CByte(nmrParentsGenome2Hue2.Value)
+
+        Genome.Naturalness = Naturalness
+        Genome.Colourness = Colourness
+        Genome.Lightness = Lightness
+        Genome.Hue = Hue
+
+        Parent2.Genome = Genome
+
+
+        UpdateParentsImages()
+
 
     End Sub
 
