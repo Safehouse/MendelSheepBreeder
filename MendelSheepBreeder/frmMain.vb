@@ -9,11 +9,28 @@ Public Class frmMain
     Private Parent2 As New MendelSheep
 
 
+    ''' <summary>
+    ''' Updates the parents objects based on the input specified by the numericupdown controls.
+    ''' </summary>
+    ''' <remarks></remarks>
     Private Sub UpdateParents()
 
+        Dim Naturalness As Allele
+        Dim Colourness As Allele
+        Dim Lightness As Allele
+        Dim Hue As Allele
 
+        Dim Genome As New Genome
+
+        Naturalness = New Allele(nmr
 
     End Sub
+
+    Private Sub UpdateParentsImages()
+
+    End Sub
+
+
 
     ''' <summary>
     ''' Whenever any of the NumericUpDown's values changes the parents get updated with the new information.
@@ -26,31 +43,31 @@ Public Class frmMain
         UpdateParents()
     End Sub
 
-    Private Sub NumericUpDonmrParentsGenome1Naturalness2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles NumericUpDonmrParentsGenome1Naturalness2.ValueChanged
+    Private Sub NumericUpDonmrParentsGenome1Naturalness2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nmrParentsGenome1Naturalness2.ValueChanged
         UpdateParents()
     End Sub
 
-    Private Sub NumericUpDonmrParentsGenome1Colourness1_ValueChanged(sender As System.Object, e As System.EventArgs) Handles NumericUpDonmrParentsGenome1Colourness1.ValueChanged
+    Private Sub NumericUpDonmrParentsGenome1Colourness1_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nmrParentsGenome1Colourness1.ValueChanged
         UpdateParents()
     End Sub
 
-    Private Sub NumericUpDonmrParentsGenome1Colourness2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles NumericUpDonmrParentsGenome1Colourness2.ValueChanged
+    Private Sub NumericUpDonmrParentsGenome1Colourness2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nmrParentsGenome1Colourness2.ValueChanged
         UpdateParents()
     End Sub
 
-    Private Sub NumericUpDonmrParentsGenome1Lightness1_ValueChanged(sender As System.Object, e As System.EventArgs) Handles NumericUpDonmrParentsGenome1Lightness1.ValueChanged
+    Private Sub NumericUpDonmrParentsGenome1Lightness1_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nmrParentsGenome1Lightness1.ValueChanged
         UpdateParents()
     End Sub
 
-    Private Sub NumericUpDonmrParentsGenome1Lightness2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles NumericUpDonmrParentsGenome1Lightness2.ValueChanged
+    Private Sub NumericUpDonmrParentsGenome1Lightness2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nmrParentsGenome1Lightness2.ValueChanged
         UpdateParents()
     End Sub
 
-    Private Sub NumericUpDonmrParentsGenome1Hue1_ValueChanged(sender As System.Object, e As System.EventArgs) Handles NumericUpDonmrParentsGenome1Hue1.ValueChanged
+    Private Sub NumericUpDonmrParentsGenome1Hue1_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nmrParentsGenome1Hue1.ValueChanged
         UpdateParents()
     End Sub
 
-    Private Sub NumericUpDonmrParentsGenome1Hue2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles NumericUpDonmrParentsGenome1Hue2.ValueChanged
+    Private Sub NumericUpDonmrParentsGenome1Hue2_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nmrParentsGenome1Hue2.ValueChanged
         UpdateParents()
     End Sub
 
