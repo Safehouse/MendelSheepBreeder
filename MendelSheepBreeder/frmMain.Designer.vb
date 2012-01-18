@@ -26,18 +26,18 @@ Partial Class frmMain
         Me.tblParents = New System.Windows.Forms.TableLayoutPanel()
         Me.pnlParentsGenomeP2 = New System.Windows.Forms.Panel()
         Me.tblParentsGenomeP2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.NumericUpDonmrParentsGenome2Hue2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDonmrParentsGenome2Hue1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDonmrParentsGenome2Lightness2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDonmrParentsGenome2Lightness1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDonmrParentsGenome2Colourness2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDonmrParentsGenome2Colourness1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDonmrParentsGenome2Naturalness2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Hue2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Hue1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Lightness2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Lightness1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Colourness2 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Colourness1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Naturalness2 = New System.Windows.Forms.NumericUpDown()
         Me.lblParentsGenomeP2Naturalness = New System.Windows.Forms.Label()
         Me.lblParentsGenomeP2Colourness = New System.Windows.Forms.Label()
         Me.lblParentsGenomeP2Lightness = New System.Windows.Forms.Label()
         Me.lblParentsGenomeP2Hue = New System.Windows.Forms.Label()
-        Me.NumericUpDonmrParentsGenome2Naturalness1 = New System.Windows.Forms.NumericUpDown()
+        Me.nmrParentsGenome2Naturalness1 = New System.Windows.Forms.NumericUpDown()
         Me.pnlParentsGenomeP1 = New System.Windows.Forms.Panel()
         Me.tblParentsGenomeP1 = New System.Windows.Forms.TableLayoutPanel()
         Me.nmrParentsGenome1Lightness2 = New System.Windows.Forms.NumericUpDown()
@@ -56,14 +56,14 @@ Partial Class frmMain
         Me.tblParents.SuspendLayout()
         Me.pnlParentsGenomeP2.SuspendLayout()
         Me.tblParentsGenomeP2.SuspendLayout()
-        CType(Me.NumericUpDonmrParentsGenome2Hue2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDonmrParentsGenome2Hue1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDonmrParentsGenome2Lightness2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDonmrParentsGenome2Lightness1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDonmrParentsGenome2Colourness2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDonmrParentsGenome2Colourness1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDonmrParentsGenome2Naturalness2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDonmrParentsGenome2Naturalness1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Hue2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Hue1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Lightness2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Lightness1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Colourness2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Colourness1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Naturalness2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nmrParentsGenome2Naturalness1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlParentsGenomeP1.SuspendLayout()
         Me.tblParentsGenomeP1.SuspendLayout()
         CType(Me.nmrParentsGenome1Lightness2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -124,18 +124,18 @@ Partial Class frmMain
         Me.tblParentsGenomeP2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.tblParentsGenomeP2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.tblParentsGenomeP2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Hue2, 3, 3)
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Hue1, 2, 3)
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Lightness2, 1, 3)
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Lightness1, 0, 3)
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Colourness2, 3, 1)
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Colourness1, 2, 1)
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Naturalness2, 1, 1)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Hue2, 3, 3)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Hue1, 2, 3)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Lightness2, 1, 3)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Lightness1, 0, 3)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Colourness2, 3, 1)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Colourness1, 2, 1)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Naturalness2, 1, 1)
         Me.tblParentsGenomeP2.Controls.Add(Me.lblParentsGenomeP2Naturalness, 0, 0)
         Me.tblParentsGenomeP2.Controls.Add(Me.lblParentsGenomeP2Colourness, 2, 0)
         Me.tblParentsGenomeP2.Controls.Add(Me.lblParentsGenomeP2Lightness, 0, 2)
         Me.tblParentsGenomeP2.Controls.Add(Me.lblParentsGenomeP2Hue, 2, 2)
-        Me.tblParentsGenomeP2.Controls.Add(Me.NumericUpDonmrParentsGenome2Naturalness1, 0, 1)
+        Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Naturalness1, 0, 1)
         Me.tblParentsGenomeP2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tblParentsGenomeP2.Location = New System.Drawing.Point(0, 0)
         Me.tblParentsGenomeP2.Name = "tblParentsGenomeP2"
@@ -147,61 +147,61 @@ Partial Class frmMain
         Me.tblParentsGenomeP2.Size = New System.Drawing.Size(223, 100)
         Me.tblParentsGenomeP2.TabIndex = 1
         '
-        'NumericUpDonmrParentsGenome2Hue2
+        'nmrParentsGenome2Hue2
         '
-        Me.NumericUpDonmrParentsGenome2Hue2.Location = New System.Drawing.Point(168, 73)
-        Me.NumericUpDonmrParentsGenome2Hue2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Hue2.Name = "NumericUpDonmrParentsGenome2Hue2"
-        Me.NumericUpDonmrParentsGenome2Hue2.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Hue2.TabIndex = 12
+        Me.nmrParentsGenome2Hue2.Location = New System.Drawing.Point(168, 73)
+        Me.nmrParentsGenome2Hue2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Hue2.Name = "nmrParentsGenome2Hue2"
+        Me.nmrParentsGenome2Hue2.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Hue2.TabIndex = 12
         '
-        'NumericUpDonmrParentsGenome2Hue1
+        'nmrParentsGenome2Hue1
         '
-        Me.NumericUpDonmrParentsGenome2Hue1.Location = New System.Drawing.Point(113, 73)
-        Me.NumericUpDonmrParentsGenome2Hue1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Hue1.Name = "NumericUpDonmrParentsGenome2Hue1"
-        Me.NumericUpDonmrParentsGenome2Hue1.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Hue1.TabIndex = 11
+        Me.nmrParentsGenome2Hue1.Location = New System.Drawing.Point(113, 73)
+        Me.nmrParentsGenome2Hue1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Hue1.Name = "nmrParentsGenome2Hue1"
+        Me.nmrParentsGenome2Hue1.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Hue1.TabIndex = 11
         '
-        'NumericUpDonmrParentsGenome2Lightness2
+        'nmrParentsGenome2Lightness2
         '
-        Me.NumericUpDonmrParentsGenome2Lightness2.Location = New System.Drawing.Point(58, 73)
-        Me.NumericUpDonmrParentsGenome2Lightness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Lightness2.Name = "NumericUpDonmrParentsGenome2Lightness2"
-        Me.NumericUpDonmrParentsGenome2Lightness2.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Lightness2.TabIndex = 10
+        Me.nmrParentsGenome2Lightness2.Location = New System.Drawing.Point(58, 73)
+        Me.nmrParentsGenome2Lightness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Lightness2.Name = "nmrParentsGenome2Lightness2"
+        Me.nmrParentsGenome2Lightness2.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Lightness2.TabIndex = 10
         '
-        'NumericUpDonmrParentsGenome2Lightness1
+        'nmrParentsGenome2Lightness1
         '
-        Me.NumericUpDonmrParentsGenome2Lightness1.Location = New System.Drawing.Point(3, 73)
-        Me.NumericUpDonmrParentsGenome2Lightness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Lightness1.Name = "NumericUpDonmrParentsGenome2Lightness1"
-        Me.NumericUpDonmrParentsGenome2Lightness1.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Lightness1.TabIndex = 9
+        Me.nmrParentsGenome2Lightness1.Location = New System.Drawing.Point(3, 73)
+        Me.nmrParentsGenome2Lightness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Lightness1.Name = "nmrParentsGenome2Lightness1"
+        Me.nmrParentsGenome2Lightness1.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Lightness1.TabIndex = 9
         '
-        'NumericUpDonmrParentsGenome2Colourness2
+        'nmrParentsGenome2Colourness2
         '
-        Me.NumericUpDonmrParentsGenome2Colourness2.Location = New System.Drawing.Point(168, 23)
-        Me.NumericUpDonmrParentsGenome2Colourness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Colourness2.Name = "NumericUpDonmrParentsGenome2Colourness2"
-        Me.NumericUpDonmrParentsGenome2Colourness2.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Colourness2.TabIndex = 8
+        Me.nmrParentsGenome2Colourness2.Location = New System.Drawing.Point(168, 23)
+        Me.nmrParentsGenome2Colourness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Colourness2.Name = "nmrParentsGenome2Colourness2"
+        Me.nmrParentsGenome2Colourness2.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Colourness2.TabIndex = 8
         '
-        'NumericUpDonmrParentsGenome2Colourness1
+        'nmrParentsGenome2Colourness1
         '
-        Me.NumericUpDonmrParentsGenome2Colourness1.Location = New System.Drawing.Point(113, 23)
-        Me.NumericUpDonmrParentsGenome2Colourness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Colourness1.Name = "NumericUpDonmrParentsGenome2Colourness1"
-        Me.NumericUpDonmrParentsGenome2Colourness1.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Colourness1.TabIndex = 7
+        Me.nmrParentsGenome2Colourness1.Location = New System.Drawing.Point(113, 23)
+        Me.nmrParentsGenome2Colourness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Colourness1.Name = "nmrParentsGenome2Colourness1"
+        Me.nmrParentsGenome2Colourness1.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Colourness1.TabIndex = 7
         '
-        'NumericUpDonmrParentsGenome2Naturalness2
+        'nmrParentsGenome2Naturalness2
         '
-        Me.NumericUpDonmrParentsGenome2Naturalness2.Location = New System.Drawing.Point(58, 23)
-        Me.NumericUpDonmrParentsGenome2Naturalness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Naturalness2.Name = "NumericUpDonmrParentsGenome2Naturalness2"
-        Me.NumericUpDonmrParentsGenome2Naturalness2.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Naturalness2.TabIndex = 6
+        Me.nmrParentsGenome2Naturalness2.Location = New System.Drawing.Point(58, 23)
+        Me.nmrParentsGenome2Naturalness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Naturalness2.Name = "nmrParentsGenome2Naturalness2"
+        Me.nmrParentsGenome2Naturalness2.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Naturalness2.TabIndex = 6
         '
         'lblParentsGenomeP2Naturalness
         '
@@ -247,13 +247,13 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Hue.TabIndex = 4
         Me.lblParentsGenomeP2Hue.Text = "Hue"
         '
-        'NumericUpDonmrParentsGenome2Naturalness1
+        'nmrParentsGenome2Naturalness1
         '
-        Me.NumericUpDonmrParentsGenome2Naturalness1.Location = New System.Drawing.Point(3, 23)
-        Me.NumericUpDonmrParentsGenome2Naturalness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDonmrParentsGenome2Naturalness1.Name = "NumericUpDonmrParentsGenome2Naturalness1"
-        Me.NumericUpDonmrParentsGenome2Naturalness1.Size = New System.Drawing.Size(49, 20)
-        Me.NumericUpDonmrParentsGenome2Naturalness1.TabIndex = 5
+        Me.nmrParentsGenome2Naturalness1.Location = New System.Drawing.Point(3, 23)
+        Me.nmrParentsGenome2Naturalness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nmrParentsGenome2Naturalness1.Name = "nmrParentsGenome2Naturalness1"
+        Me.nmrParentsGenome2Naturalness1.Size = New System.Drawing.Size(49, 20)
+        Me.nmrParentsGenome2Naturalness1.TabIndex = 5
         '
         'pnlParentsGenomeP1
         '
@@ -417,14 +417,14 @@ Partial Class frmMain
         Me.pnlParentsGenomeP2.ResumeLayout(False)
         Me.tblParentsGenomeP2.ResumeLayout(False)
         Me.tblParentsGenomeP2.PerformLayout()
-        CType(Me.NumericUpDonmrParentsGenome2Hue2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDonmrParentsGenome2Hue1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDonmrParentsGenome2Lightness2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDonmrParentsGenome2Lightness1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDonmrParentsGenome2Colourness2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDonmrParentsGenome2Colourness1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDonmrParentsGenome2Naturalness2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDonmrParentsGenome2Naturalness1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Hue2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Hue1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Lightness2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Lightness1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Colourness2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Colourness1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Naturalness2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nmrParentsGenome2Naturalness1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlParentsGenomeP1.ResumeLayout(False)
         Me.tblParentsGenomeP1.ResumeLayout(False)
         Me.tblParentsGenomeP1.PerformLayout()
@@ -453,14 +453,14 @@ Partial Class frmMain
     Friend WithEvents lblParentsGenomeP2Hue As System.Windows.Forms.Label
     Friend WithEvents lblParentsGenomeP1Lightness As System.Windows.Forms.Label
     Friend WithEvents lblParentsGenomeP1Hue As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDonmrParentsGenome2Hue2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDonmrParentsGenome2Hue1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDonmrParentsGenome2Lightness2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDonmrParentsGenome2Lightness1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDonmrParentsGenome2Colourness2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDonmrParentsGenome2Colourness1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDonmrParentsGenome2Naturalness2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDonmrParentsGenome2Naturalness1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Hue2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Hue1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Lightness2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Lightness1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Colourness2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Colourness1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Naturalness2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents nmrParentsGenome2Naturalness1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents nmrParentsGenome1Lightness2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents nmrParentsGenome1Lightness1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents nmrParentsGenome1Hue2 As System.Windows.Forms.NumericUpDown
