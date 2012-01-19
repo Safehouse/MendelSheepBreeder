@@ -52,6 +52,8 @@ Partial Class frmMain
         Me.nmrParentsGenome1Naturalness1 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome1Naturalness2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome1Colourness2 = New System.Windows.Forms.NumericUpDown()
+        Me.pctParent1 = New System.Windows.Forms.PictureBox()
+        Me.pctParent2 = New System.Windows.Forms.PictureBox()
         Me.tblMain.SuspendLayout()
         Me.tblParents.SuspendLayout()
         Me.pnlParentsGenomeP2.SuspendLayout()
@@ -74,6 +76,8 @@ Partial Class frmMain
         CType(Me.nmrParentsGenome1Naturalness1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome1Naturalness2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome1Colourness2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tblMain
@@ -96,6 +100,8 @@ Partial Class frmMain
         Me.tblParents.ColumnCount = 2
         Me.tblParents.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblParents.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblParents.Controls.Add(Me.pctParent2, 1, 0)
+        Me.tblParents.Controls.Add(Me.pctParent1, 0, 0)
         Me.tblParents.Controls.Add(Me.pnlParentsGenomeP2, 1, 1)
         Me.tblParents.Controls.Add(Me.pnlParentsGenomeP1, 0, 1)
         Me.tblParents.Dock = System.Windows.Forms.DockStyle.Fill
@@ -404,6 +410,24 @@ Partial Class frmMain
         Me.nmrParentsGenome1Colourness2.Size = New System.Drawing.Size(49, 20)
         Me.nmrParentsGenome1Colourness2.TabIndex = 8
         '
+        'pctParent1
+        '
+        Me.pctParent1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pctParent1.Location = New System.Drawing.Point(3, 3)
+        Me.pctParent1.Name = "pctParent1"
+        Me.pctParent1.Size = New System.Drawing.Size(225, 164)
+        Me.pctParent1.TabIndex = 1
+        Me.pctParent1.TabStop = False
+        '
+        'pctParent2
+        '
+        Me.pctParent2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pctParent2.Location = New System.Drawing.Point(234, 3)
+        Me.pctParent2.Name = "pctParent2"
+        Me.pctParent2.Size = New System.Drawing.Size(225, 164)
+        Me.pctParent2.TabIndex = 4
+        Me.pctParent2.TabStop = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -436,6 +460,8 @@ Partial Class frmMain
         CType(Me.nmrParentsGenome1Naturalness1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrParentsGenome1Naturalness2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrParentsGenome1Colourness2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -469,5 +495,7 @@ Partial Class frmMain
     Friend WithEvents nmrParentsGenome1Naturalness1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents nmrParentsGenome1Naturalness2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents nmrParentsGenome1Colourness2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents pctParent2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pctParent1 As System.Windows.Forms.PictureBox
 
 End Class

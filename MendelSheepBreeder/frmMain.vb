@@ -70,7 +70,81 @@ Public Class frmMain
 
     End Sub
 
+    ''' <summary>
+    ''' Updates the shown images of the parents based on their phenotypes.
+    ''' </summary>
+    ''' <remarks></remarks>
     Private Sub UpdateParentsImages()
+
+        Select Case Parent1.Phenotype
+            Case Phenotype.Black
+                pctParent1.Image = My.Resources.sheep_black
+            Case Phenotype.Blue
+                pctParent1.Image = My.Resources.sheep_blue
+            Case Phenotype.Brown
+                pctParent1.Image = My.Resources.sheep_brown
+            Case Phenotype.Cyan
+                pctParent1.Image=My.Resources.sheep_cyan
+            Case Phenotype.Green
+                pctParent1.Image = My.Resources.sheep_green
+            Case Phenotype.Grey
+                pctParent1.Image = My.Resources.sheep_grey
+            Case Phenotype.LightBlue
+                pctParent1.Image = My.Resources.sheep_lightblue
+            Case Phenotype.LightGrey
+                pctParent1.Image = My.Resources.sheep_lightgrey
+            Case Phenotype.Lime
+                pctParent1.Image = My.Resources.sheep_lime
+            Case Phenotype.Magenta
+                pctParent1.Image = My.Resources.sheep_magenta
+            Case Phenotype.Orange
+                pctParent1.Image = My.Resources.sheep_orange
+            Case Phenotype.Pink
+                pctParent1.Image = My.Resources.sheep_pink
+            Case Phenotype.Purple
+                pctParent1.Image = My.Resources.sheep_purple
+            Case Phenotype.Red
+                pctParent1.Image = My.Resources.sheep_red
+            Case Phenotype.White
+                pctParent1.Image = My.Resources.sheep_white
+            Case Phenotype.Yellow
+                pctParent1.Image = My.Resources.sheep_yellow
+        End Select
+
+        Select Case Parent2.Phenotype
+            Case Phenotype.Black
+                pctParent2.Image = My.Resources.sheep_black
+            Case Phenotype.Blue
+                pctParent2.Image = My.Resources.sheep_blue
+            Case Phenotype.Brown
+                pctParent2.Image = My.Resources.sheep_brown
+            Case Phenotype.Cyan
+                pctParent2.Image = My.Resources.sheep_cyan
+            Case Phenotype.Green
+                pctParent2.Image = My.Resources.sheep_green
+            Case Phenotype.Grey
+                pctParent2.Image = My.Resources.sheep_grey
+            Case Phenotype.LightBlue
+                pctParent2.Image = My.Resources.sheep_lightblue
+            Case Phenotype.LightGrey
+                pctParent2.Image = My.Resources.sheep_lightgrey
+            Case Phenotype.Lime
+                pctParent2.Image = My.Resources.sheep_lime
+            Case Phenotype.Magenta
+                pctParent2.Image = My.Resources.sheep_magenta
+            Case Phenotype.Orange
+                pctParent2.Image = My.Resources.sheep_orange
+            Case Phenotype.Pink
+                pctParent2.Image = My.Resources.sheep_pink
+            Case Phenotype.Purple
+                pctParent2.Image = My.Resources.sheep_purple
+            Case Phenotype.Red
+                pctParent2.Image = My.Resources.sheep_red
+            Case Phenotype.White
+                pctParent2.Image = My.Resources.sheep_white
+            Case Phenotype.Yellow
+                pctParent2.Image = My.Resources.sheep_yellow
+        End Select
 
     End Sub
 
