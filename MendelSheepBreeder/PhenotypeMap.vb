@@ -2,7 +2,7 @@
 
     Friend Module PhenotypeMap
 
-        Private _Map(,,,) As Phenotype
+        Private _Map(1, 1, 1, 1) As Phenotype
 
 
         Private Sub Initialize()
@@ -36,6 +36,8 @@
         ''' <remarks></remarks>
         Friend Function GetPhenoype(ByVal Genome As Genome) As Phenotype
 
+            Initialize()
+
             Dim ResultingNaturalness As Byte
             Dim ResultingColourness As Byte
             Dim ResultingLightness As Byte
@@ -46,7 +48,9 @@
             ResultingLightness = Genome.Lightness.Gene1 Or Genome.Lightness.Gene2
             ResultingHue = Genome.Hue.Gene1 Or Genome.Hue.Gene2
 
-            Return _Map(ResultingNaturalness, ResultingColourness, ResultingLightness, ResultingHue)
+            Dim Phenotype As New Phenotype
+            Phenotype = _Map(ResultingNaturalness, ResultingColourness, ResultingLightness, ResultingHue)
+            Return Phenotype
 
         End Function
 
