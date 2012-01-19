@@ -118,6 +118,54 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_cyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_lightblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_lightgrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_lime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_magenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheep_yellow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
