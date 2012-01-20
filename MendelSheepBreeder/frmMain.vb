@@ -8,6 +8,8 @@ Public Class frmMain
     Private Parent1 As New MendelSheep
     Private Parent2 As New MendelSheep
 
+    Private ListOfChildren As New List(Of MendelSheep)
+
 
     ''' <summary>
     ''' Updates the parents objects based on the input specified by the numericupdown controls.
@@ -64,6 +66,8 @@ Public Class frmMain
 
         Parent2.Genome = Genome
 
+        ' If this'll ever be too much of a performance impact I could always add a separate button to call this function.
+        UpdateChildren()
 
         UpdateParentsImages()
 
@@ -148,6 +152,79 @@ Public Class frmMain
 
     End Sub
 
+
+    ''' <summary>
+    ''' Updates the list containing all the possible children if the two parents were to mate.
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub UpdateChildren()
+
+        ListOfChildren.Clear()
+        ListOfChildren = ReproductionAssistant.GetChildren(Parent1, Parent2)
+
+        UpdateChildrenImages()
+
+    End Sub
+
+    ''' <summary>
+    ''' Adds both an image for each child in the FlowLayoutPanel as well as in the summary.
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub UpdateChildrenImages()
+
+        Dim i As Integer = 0
+
+        ' First remove the existing images from the FlowLayoutPanel, then add new ones for each child.
+        flwChildrenOutput.Controls.Clear()
+        For Each Child As MendelSheep In ListOfChildren
+
+            Dim pctChild As New Windows.Forms.PictureBox
+            pctChild.Name = "Child_" & CStr(i)
+            pctChild.Size = New System.Drawing.Size(100, 100)
+            pctChild.SizeMode = PictureBoxSizeMode.Zoom
+
+            Select Case Child.Phenotype
+                Case Phenotype.Black
+                    pctChild.Image = My.Resources.sheep_black
+                Case Phenotype.Blue
+                    pctChild.Image = My.Resources.sheep_blue
+                Case Phenotype.Brown
+                    pctChild.Image = My.Resources.sheep_brown
+                Case Phenotype.Cyan
+                    pctChild.Image = My.Resources.sheep_cyan
+                Case Phenotype.Green
+                    pctChild.Image = My.Resources.sheep_green
+                Case Phenotype.Grey
+                    pctChild.Image = My.Resources.sheep_grey
+                Case Phenotype.LightBlue
+                    pctChild.Image = My.Resources.sheep_lightblue
+                Case Phenotype.LightGrey
+                    pctChild.Image = My.Resources.sheep_lightgrey
+                Case Phenotype.Lime
+                    pctChild.Image = My.Resources.sheep_lime
+                Case Phenotype.Magenta
+                    pctChild.Image = My.Resources.sheep_magenta
+                Case Phenotype.Orange
+                    pctChild.Image = My.Resources.sheep_orange
+                Case Phenotype.Pink
+                    pctChild.Image = My.Resources.sheep_pink
+                Case Phenotype.Purple
+                    pctChild.Image = My.Resources.sheep_purple
+                Case Phenotype.Red
+                    pctChild.Image = My.Resources.sheep_red
+                Case Phenotype.White
+                    pctChild.Image = My.Resources.sheep_white
+                Case Phenotype.Yellow
+                    pctChild.Image = My.Resources.sheep_yellow
+            End Select
+
+            i += 1
+
+            flwChildrenOutput.Controls.Add(pctChild)
+
+        Next
+
+    End Sub
 
 
     ''' <summary>

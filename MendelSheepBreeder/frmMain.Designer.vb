@@ -54,6 +54,7 @@ Partial Class frmMain
         Me.nmrParentsGenome1Naturalness1 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome1Naturalness2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome1Colourness2 = New System.Windows.Forms.NumericUpDown()
+        Me.flwChildrenOutput = New System.Windows.Forms.FlowLayoutPanel()
         Me.tblMain.SuspendLayout()
         Me.tblParents.SuspendLayout()
         CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,6 +87,7 @@ Partial Class frmMain
         Me.tblMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblMain.Controls.Add(Me.tblParents, 0, 0)
+        Me.tblMain.Controls.Add(Me.flwChildrenOutput, 0, 1)
         Me.tblMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tblMain.Location = New System.Drawing.Point(0, 0)
         Me.tblMain.Name = "tblMain"
@@ -428,6 +430,14 @@ Partial Class frmMain
         Me.nmrParentsGenome1Colourness2.Size = New System.Drawing.Size(49, 20)
         Me.nmrParentsGenome1Colourness2.TabIndex = 8
         '
+        'flwChildrenOutput
+        '
+        Me.flwChildrenOutput.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.flwChildrenOutput.Location = New System.Drawing.Point(3, 287)
+        Me.flwChildrenOutput.Name = "flwChildrenOutput"
+        Me.flwChildrenOutput.Size = New System.Drawing.Size(462, 278)
+        Me.flwChildrenOutput.TabIndex = 1
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -497,5 +507,6 @@ Partial Class frmMain
     Friend WithEvents nmrParentsGenome1Colourness2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents pctParent2 As System.Windows.Forms.PictureBox
     Friend WithEvents pctParent1 As System.Windows.Forms.PictureBox
+    Friend WithEvents flwChildrenOutput As System.Windows.Forms.FlowLayoutPanel
 
 End Class
