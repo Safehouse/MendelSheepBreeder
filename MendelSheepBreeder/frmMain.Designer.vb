@@ -24,6 +24,8 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.tblMain = New System.Windows.Forms.TableLayoutPanel()
         Me.tblParents = New System.Windows.Forms.TableLayoutPanel()
+        Me.pctParent2 = New System.Windows.Forms.PictureBox()
+        Me.pctParent1 = New System.Windows.Forms.PictureBox()
         Me.pnlParentsGenomeP2 = New System.Windows.Forms.Panel()
         Me.tblParentsGenomeP2 = New System.Windows.Forms.TableLayoutPanel()
         Me.nmrParentsGenome2Hue2 = New System.Windows.Forms.NumericUpDown()
@@ -52,10 +54,10 @@ Partial Class frmMain
         Me.nmrParentsGenome1Naturalness1 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome1Naturalness2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome1Colourness2 = New System.Windows.Forms.NumericUpDown()
-        Me.pctParent1 = New System.Windows.Forms.PictureBox()
-        Me.pctParent2 = New System.Windows.Forms.PictureBox()
         Me.tblMain.SuspendLayout()
         Me.tblParents.SuspendLayout()
+        CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlParentsGenomeP2.SuspendLayout()
         Me.tblParentsGenomeP2.SuspendLayout()
         CType(Me.nmrParentsGenome2Hue2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,8 +78,6 @@ Partial Class frmMain
         CType(Me.nmrParentsGenome1Naturalness1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome1Naturalness2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome1Colourness2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tblMain
@@ -112,6 +112,24 @@ Partial Class frmMain
         Me.tblParents.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.84892!))
         Me.tblParents.Size = New System.Drawing.Size(462, 278)
         Me.tblParents.TabIndex = 0
+        '
+        'pctParent2
+        '
+        Me.pctParent2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pctParent2.Location = New System.Drawing.Point(234, 3)
+        Me.pctParent2.Name = "pctParent2"
+        Me.pctParent2.Size = New System.Drawing.Size(225, 164)
+        Me.pctParent2.TabIndex = 4
+        Me.pctParent2.TabStop = False
+        '
+        'pctParent1
+        '
+        Me.pctParent1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pctParent1.Location = New System.Drawing.Point(3, 3)
+        Me.pctParent1.Name = "pctParent1"
+        Me.pctParent1.Size = New System.Drawing.Size(225, 164)
+        Me.pctParent1.TabIndex = 1
+        Me.pctParent1.TabStop = False
         '
         'pnlParentsGenomeP2
         '
@@ -410,24 +428,6 @@ Partial Class frmMain
         Me.nmrParentsGenome1Colourness2.Size = New System.Drawing.Size(49, 20)
         Me.nmrParentsGenome1Colourness2.TabIndex = 8
         '
-        'pctParent1
-        '
-        Me.pctParent1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pctParent1.Location = New System.Drawing.Point(3, 3)
-        Me.pctParent1.Name = "pctParent1"
-        Me.pctParent1.Size = New System.Drawing.Size(225, 164)
-        Me.pctParent1.TabIndex = 1
-        Me.pctParent1.TabStop = False
-        '
-        'pctParent2
-        '
-        Me.pctParent2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pctParent2.Location = New System.Drawing.Point(234, 3)
-        Me.pctParent2.Name = "pctParent2"
-        Me.pctParent2.Size = New System.Drawing.Size(225, 164)
-        Me.pctParent2.TabIndex = 4
-        Me.pctParent2.TabStop = False
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -438,6 +438,8 @@ Partial Class frmMain
         Me.Text = "Mendel Sheep Breeder"
         Me.tblMain.ResumeLayout(False)
         Me.tblParents.ResumeLayout(False)
+        CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlParentsGenomeP2.ResumeLayout(False)
         Me.tblParentsGenomeP2.ResumeLayout(False)
         Me.tblParentsGenomeP2.PerformLayout()
@@ -460,8 +462,6 @@ Partial Class frmMain
         CType(Me.nmrParentsGenome1Naturalness1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrParentsGenome1Naturalness2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrParentsGenome1Colourness2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -224,5 +224,17 @@ Public Class frmMain
 
 #End Region
 
+    ''' <summary>
+    ''' Sets initial values for certain things, updates the parent's genome etc etc
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub frmMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+        UpdateParents()
+
+    End Sub
+
 End Class
 
