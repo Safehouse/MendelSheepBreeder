@@ -91,6 +91,18 @@
 
 #End Region
 
+        Overrides Function ToString() As String
+
+            Dim John As New System.Text.StringBuilder
+
+            John.Append(Naturalness.ToString).AppendLine()
+            John.Append(Colourness.ToString).AppendLine()
+            John.Append(Lightness.ToString).AppendLine()
+            John.Append(Hue.ToString).AppendLine()
+
+            Return John.ToString
+
+        End Function
 
     End Class
 
