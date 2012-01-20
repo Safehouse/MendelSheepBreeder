@@ -19,7 +19,7 @@
             _Map(0, 1, 1, 1) = Phenotype.Pink
             _Map(1, 0, 0, 0) = Phenotype.Green
             _Map(1, 0, 0, 1) = Phenotype.Orange
-            _Map(1, 0, 1, 0) = Phenotype.Green
+            _Map(1, 0, 1, 0) = Phenotype.Lime
             _Map(1, 0, 1, 1) = Phenotype.Yellow
             _Map(1, 1, 0, 0) = Phenotype.Black
             _Map(1, 1, 0, 1) = Phenotype.LightGrey
