@@ -4,6 +4,7 @@ Public Class frmMain
 
     ' Order of genomes is: Naturalness -Colourness - Lightness - Hue.
 
+    Friend Const DEBUG As Boolean = False
 
     Private Parent1 As New MendelSheep
     Private Parent2 As New MendelSheep
@@ -46,6 +47,14 @@ Public Class frmMain
         Parent1.Genome = Genome
 
 
+        ' Create new objects, since the genome of the 1st parent would be set to the one of the second parent if you wouldn't do this.
+        Naturalness = New Allele
+        Colourness = New Allele
+        Lightness = New Allele
+        Hue = New Allele
+
+        Genome = New Genome
+
         ' Get the specified information for the second parent.
         Naturalness.Gene1 = CByte(nmrParentsGenome2Naturalness1.Value)
         Naturalness.Gene2 = CByte(nmrParentsGenome2Naturalness2.Value)
@@ -64,12 +73,14 @@ Public Class frmMain
         Genome.Lightness = Lightness
         Genome.Hue = Hue
 
-        Parent2.Genome = Genome
+        Parent2.Genome = New Genome(Genome)
 
         ' If this'll ever be too much of a performance impact I could always add a separate button to call this function.
         UpdateChildren()
 
         UpdateParentsImages()
+
+        If DEBUG = True Then MsgBox(Parent1.Genome.ToString & vbCrLf & Parent2.Genome.ToString)
 
 
     End Sub
@@ -180,7 +191,7 @@ Public Class frmMain
 
             Dim pctChild As New Windows.Forms.PictureBox
             pctChild.Name = "Child_" & CStr(i)
-            pctChild.Size = New System.Drawing.Size(100, 100)
+            pctChild.Size = New System.Drawing.Size(40, 40)
             pctChild.SizeMode = PictureBoxSizeMode.Zoom
 
             Select Case Child.Phenotype

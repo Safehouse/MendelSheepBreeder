@@ -84,8 +84,8 @@ Partial Class frmMain
         'tblMain
         '
         Me.tblMain.ColumnCount = 2
-        Me.tblMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.51282!))
+        Me.tblMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.48718!))
         Me.tblMain.Controls.Add(Me.tblParents, 0, 0)
         Me.tblMain.Controls.Add(Me.flwChildrenOutput, 0, 1)
         Me.tblMain.Dock = System.Windows.Forms.DockStyle.Fill
@@ -112,15 +112,16 @@ Partial Class frmMain
         Me.tblParents.RowCount = 2
         Me.tblParents.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.15108!))
         Me.tblParents.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.84892!))
-        Me.tblParents.Size = New System.Drawing.Size(462, 278)
+        Me.tblParents.Size = New System.Drawing.Size(653, 278)
         Me.tblParents.TabIndex = 0
         '
         'pctParent2
         '
         Me.pctParent2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pctParent2.Location = New System.Drawing.Point(234, 3)
+        Me.pctParent2.Location = New System.Drawing.Point(329, 3)
         Me.pctParent2.Name = "pctParent2"
-        Me.pctParent2.Size = New System.Drawing.Size(225, 164)
+        Me.pctParent2.Size = New System.Drawing.Size(321, 164)
+        Me.pctParent2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctParent2.TabIndex = 4
         Me.pctParent2.TabStop = False
         '
@@ -129,7 +130,8 @@ Partial Class frmMain
         Me.pctParent1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctParent1.Location = New System.Drawing.Point(3, 3)
         Me.pctParent1.Name = "pctParent1"
-        Me.pctParent1.Size = New System.Drawing.Size(225, 164)
+        Me.pctParent1.Size = New System.Drawing.Size(320, 164)
+        Me.pctParent1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctParent1.TabIndex = 1
         Me.pctParent1.TabStop = False
         '
@@ -138,9 +140,9 @@ Partial Class frmMain
         Me.pnlParentsGenomeP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlParentsGenomeP2.Controls.Add(Me.tblParentsGenomeP2)
         Me.pnlParentsGenomeP2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlParentsGenomeP2.Location = New System.Drawing.Point(234, 173)
+        Me.pnlParentsGenomeP2.Location = New System.Drawing.Point(329, 173)
         Me.pnlParentsGenomeP2.Name = "pnlParentsGenomeP2"
-        Me.pnlParentsGenomeP2.Size = New System.Drawing.Size(225, 102)
+        Me.pnlParentsGenomeP2.Size = New System.Drawing.Size(321, 102)
         Me.pnlParentsGenomeP2.TabIndex = 2
         '
         'tblParentsGenomeP2
@@ -170,12 +172,12 @@ Partial Class frmMain
         Me.tblParentsGenomeP2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblParentsGenomeP2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tblParentsGenomeP2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblParentsGenomeP2.Size = New System.Drawing.Size(223, 100)
+        Me.tblParentsGenomeP2.Size = New System.Drawing.Size(319, 100)
         Me.tblParentsGenomeP2.TabIndex = 1
         '
         'nmrParentsGenome2Hue2
         '
-        Me.nmrParentsGenome2Hue2.Location = New System.Drawing.Point(168, 73)
+        Me.nmrParentsGenome2Hue2.Location = New System.Drawing.Point(240, 73)
         Me.nmrParentsGenome2Hue2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Hue2.Name = "nmrParentsGenome2Hue2"
         Me.nmrParentsGenome2Hue2.Size = New System.Drawing.Size(49, 20)
@@ -183,7 +185,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Hue1
         '
-        Me.nmrParentsGenome2Hue1.Location = New System.Drawing.Point(113, 73)
+        Me.nmrParentsGenome2Hue1.Location = New System.Drawing.Point(161, 73)
         Me.nmrParentsGenome2Hue1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Hue1.Name = "nmrParentsGenome2Hue1"
         Me.nmrParentsGenome2Hue1.Size = New System.Drawing.Size(49, 20)
@@ -191,7 +193,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Lightness2
         '
-        Me.nmrParentsGenome2Lightness2.Location = New System.Drawing.Point(58, 73)
+        Me.nmrParentsGenome2Lightness2.Location = New System.Drawing.Point(82, 73)
         Me.nmrParentsGenome2Lightness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Lightness2.Name = "nmrParentsGenome2Lightness2"
         Me.nmrParentsGenome2Lightness2.Size = New System.Drawing.Size(49, 20)
@@ -207,7 +209,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Colourness2
         '
-        Me.nmrParentsGenome2Colourness2.Location = New System.Drawing.Point(168, 23)
+        Me.nmrParentsGenome2Colourness2.Location = New System.Drawing.Point(240, 23)
         Me.nmrParentsGenome2Colourness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Colourness2.Name = "nmrParentsGenome2Colourness2"
         Me.nmrParentsGenome2Colourness2.Size = New System.Drawing.Size(49, 20)
@@ -215,7 +217,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Colourness1
         '
-        Me.nmrParentsGenome2Colourness1.Location = New System.Drawing.Point(113, 23)
+        Me.nmrParentsGenome2Colourness1.Location = New System.Drawing.Point(161, 23)
         Me.nmrParentsGenome2Colourness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Colourness1.Name = "nmrParentsGenome2Colourness1"
         Me.nmrParentsGenome2Colourness1.Size = New System.Drawing.Size(49, 20)
@@ -223,7 +225,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Naturalness2
         '
-        Me.nmrParentsGenome2Naturalness2.Location = New System.Drawing.Point(58, 23)
+        Me.nmrParentsGenome2Naturalness2.Location = New System.Drawing.Point(82, 23)
         Me.nmrParentsGenome2Naturalness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Naturalness2.Name = "nmrParentsGenome2Naturalness2"
         Me.nmrParentsGenome2Naturalness2.Size = New System.Drawing.Size(49, 20)
@@ -234,7 +236,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Naturalness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP2Naturalness.AutoSize = True
         Me.tblParentsGenomeP2.SetColumnSpan(Me.lblParentsGenomeP2Naturalness, 2)
-        Me.lblParentsGenomeP2Naturalness.Location = New System.Drawing.Point(23, 7)
+        Me.lblParentsGenomeP2Naturalness.Location = New System.Drawing.Point(47, 7)
         Me.lblParentsGenomeP2Naturalness.Name = "lblParentsGenomeP2Naturalness"
         Me.lblParentsGenomeP2Naturalness.Size = New System.Drawing.Size(63, 13)
         Me.lblParentsGenomeP2Naturalness.TabIndex = 1
@@ -245,7 +247,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Colourness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP2Colourness.AutoSize = True
         Me.tblParentsGenomeP2.SetColumnSpan(Me.lblParentsGenomeP2Colourness, 2)
-        Me.lblParentsGenomeP2Colourness.Location = New System.Drawing.Point(137, 7)
+        Me.lblParentsGenomeP2Colourness.Location = New System.Drawing.Point(209, 7)
         Me.lblParentsGenomeP2Colourness.Name = "lblParentsGenomeP2Colourness"
         Me.lblParentsGenomeP2Colourness.Size = New System.Drawing.Size(59, 13)
         Me.lblParentsGenomeP2Colourness.TabIndex = 2
@@ -256,7 +258,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Lightness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP2Lightness.AutoSize = True
         Me.tblParentsGenomeP2.SetColumnSpan(Me.lblParentsGenomeP2Lightness, 2)
-        Me.lblParentsGenomeP2Lightness.Location = New System.Drawing.Point(29, 57)
+        Me.lblParentsGenomeP2Lightness.Location = New System.Drawing.Point(53, 57)
         Me.lblParentsGenomeP2Lightness.Name = "lblParentsGenomeP2Lightness"
         Me.lblParentsGenomeP2Lightness.Size = New System.Drawing.Size(52, 13)
         Me.lblParentsGenomeP2Lightness.TabIndex = 3
@@ -267,7 +269,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Hue.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP2Hue.AutoSize = True
         Me.tblParentsGenomeP2.SetColumnSpan(Me.lblParentsGenomeP2Hue, 2)
-        Me.lblParentsGenomeP2Hue.Location = New System.Drawing.Point(153, 57)
+        Me.lblParentsGenomeP2Hue.Location = New System.Drawing.Point(225, 57)
         Me.lblParentsGenomeP2Hue.Name = "lblParentsGenomeP2Hue"
         Me.lblParentsGenomeP2Hue.Size = New System.Drawing.Size(27, 13)
         Me.lblParentsGenomeP2Hue.TabIndex = 4
@@ -288,7 +290,7 @@ Partial Class frmMain
         Me.pnlParentsGenomeP1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlParentsGenomeP1.Location = New System.Drawing.Point(3, 173)
         Me.pnlParentsGenomeP1.Name = "pnlParentsGenomeP1"
-        Me.pnlParentsGenomeP1.Size = New System.Drawing.Size(225, 102)
+        Me.pnlParentsGenomeP1.Size = New System.Drawing.Size(320, 102)
         Me.pnlParentsGenomeP1.TabIndex = 3
         '
         'tblParentsGenomeP1
@@ -319,12 +321,12 @@ Partial Class frmMain
         Me.tblParentsGenomeP1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tblParentsGenomeP1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblParentsGenomeP1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.tblParentsGenomeP1.Size = New System.Drawing.Size(223, 100)
+        Me.tblParentsGenomeP1.Size = New System.Drawing.Size(318, 100)
         Me.tblParentsGenomeP1.TabIndex = 0
         '
         'nmrParentsGenome1Lightness2
         '
-        Me.nmrParentsGenome1Lightness2.Location = New System.Drawing.Point(58, 73)
+        Me.nmrParentsGenome1Lightness2.Location = New System.Drawing.Point(82, 73)
         Me.nmrParentsGenome1Lightness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Lightness2.Name = "nmrParentsGenome1Lightness2"
         Me.nmrParentsGenome1Lightness2.Size = New System.Drawing.Size(49, 20)
@@ -340,7 +342,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Hue2
         '
-        Me.nmrParentsGenome1Hue2.Location = New System.Drawing.Point(168, 73)
+        Me.nmrParentsGenome1Hue2.Location = New System.Drawing.Point(240, 73)
         Me.nmrParentsGenome1Hue2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Hue2.Name = "nmrParentsGenome1Hue2"
         Me.nmrParentsGenome1Hue2.Size = New System.Drawing.Size(49, 20)
@@ -348,7 +350,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Hue1
         '
-        Me.nmrParentsGenome1Hue1.Location = New System.Drawing.Point(113, 73)
+        Me.nmrParentsGenome1Hue1.Location = New System.Drawing.Point(161, 73)
         Me.nmrParentsGenome1Hue1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Hue1.Name = "nmrParentsGenome1Hue1"
         Me.nmrParentsGenome1Hue1.Size = New System.Drawing.Size(49, 20)
@@ -359,7 +361,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP1Naturalness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP1Naturalness.AutoSize = True
         Me.tblParentsGenomeP1.SetColumnSpan(Me.lblParentsGenomeP1Naturalness, 2)
-        Me.lblParentsGenomeP1Naturalness.Location = New System.Drawing.Point(23, 7)
+        Me.lblParentsGenomeP1Naturalness.Location = New System.Drawing.Point(47, 7)
         Me.lblParentsGenomeP1Naturalness.Name = "lblParentsGenomeP1Naturalness"
         Me.lblParentsGenomeP1Naturalness.Size = New System.Drawing.Size(63, 13)
         Me.lblParentsGenomeP1Naturalness.TabIndex = 1
@@ -370,7 +372,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP1Colourness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP1Colourness.AutoSize = True
         Me.tblParentsGenomeP1.SetColumnSpan(Me.lblParentsGenomeP1Colourness, 2)
-        Me.lblParentsGenomeP1Colourness.Location = New System.Drawing.Point(137, 7)
+        Me.lblParentsGenomeP1Colourness.Location = New System.Drawing.Point(208, 7)
         Me.lblParentsGenomeP1Colourness.Name = "lblParentsGenomeP1Colourness"
         Me.lblParentsGenomeP1Colourness.Size = New System.Drawing.Size(59, 13)
         Me.lblParentsGenomeP1Colourness.TabIndex = 2
@@ -381,7 +383,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP1Lightness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP1Lightness.AutoSize = True
         Me.tblParentsGenomeP1.SetColumnSpan(Me.lblParentsGenomeP1Lightness, 2)
-        Me.lblParentsGenomeP1Lightness.Location = New System.Drawing.Point(29, 57)
+        Me.lblParentsGenomeP1Lightness.Location = New System.Drawing.Point(53, 57)
         Me.lblParentsGenomeP1Lightness.Name = "lblParentsGenomeP1Lightness"
         Me.lblParentsGenomeP1Lightness.Size = New System.Drawing.Size(52, 13)
         Me.lblParentsGenomeP1Lightness.TabIndex = 3
@@ -392,7 +394,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP1Hue.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP1Hue.AutoSize = True
         Me.tblParentsGenomeP1.SetColumnSpan(Me.lblParentsGenomeP1Hue, 2)
-        Me.lblParentsGenomeP1Hue.Location = New System.Drawing.Point(153, 57)
+        Me.lblParentsGenomeP1Hue.Location = New System.Drawing.Point(224, 57)
         Me.lblParentsGenomeP1Hue.Name = "lblParentsGenomeP1Hue"
         Me.lblParentsGenomeP1Hue.Size = New System.Drawing.Size(27, 13)
         Me.lblParentsGenomeP1Hue.TabIndex = 4
@@ -400,7 +402,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Colourness1
         '
-        Me.nmrParentsGenome1Colourness1.Location = New System.Drawing.Point(113, 23)
+        Me.nmrParentsGenome1Colourness1.Location = New System.Drawing.Point(161, 23)
         Me.nmrParentsGenome1Colourness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Colourness1.Name = "nmrParentsGenome1Colourness1"
         Me.nmrParentsGenome1Colourness1.Size = New System.Drawing.Size(49, 20)
@@ -416,7 +418,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Naturalness2
         '
-        Me.nmrParentsGenome1Naturalness2.Location = New System.Drawing.Point(58, 23)
+        Me.nmrParentsGenome1Naturalness2.Location = New System.Drawing.Point(82, 23)
         Me.nmrParentsGenome1Naturalness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Naturalness2.Name = "nmrParentsGenome1Naturalness2"
         Me.nmrParentsGenome1Naturalness2.Size = New System.Drawing.Size(49, 20)
@@ -424,7 +426,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Colourness2
         '
-        Me.nmrParentsGenome1Colourness2.Location = New System.Drawing.Point(168, 23)
+        Me.nmrParentsGenome1Colourness2.Location = New System.Drawing.Point(240, 23)
         Me.nmrParentsGenome1Colourness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Colourness2.Name = "nmrParentsGenome1Colourness2"
         Me.nmrParentsGenome1Colourness2.Size = New System.Drawing.Size(49, 20)
@@ -435,7 +437,7 @@ Partial Class frmMain
         Me.flwChildrenOutput.Dock = System.Windows.Forms.DockStyle.Fill
         Me.flwChildrenOutput.Location = New System.Drawing.Point(3, 287)
         Me.flwChildrenOutput.Name = "flwChildrenOutput"
-        Me.flwChildrenOutput.Size = New System.Drawing.Size(462, 278)
+        Me.flwChildrenOutput.Size = New System.Drawing.Size(653, 278)
         Me.flwChildrenOutput.TabIndex = 1
         '
         'frmMain
