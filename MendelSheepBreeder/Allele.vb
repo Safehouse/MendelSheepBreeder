@@ -47,6 +47,21 @@
 
         Private _Gene2 As Byte
 
+
+        Friend Property Name As String
+
+            Get
+                Return _Name
+            End Get
+
+            Set(value As String)
+                _Name = value
+            End Set
+
+        End Property
+
+        Private _Name As String
+
 #End Region
 
 
@@ -64,6 +79,15 @@
         End Sub
 
 #End Region
+
+        Overrides Function ToString() As String
+
+            Dim John As String
+
+            John = Name & ": " & CStr(Gene1) & "," & CStr(Gene2)
+            Return John
+
+        End Function
 
     End Class
 
