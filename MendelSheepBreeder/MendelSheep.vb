@@ -25,7 +25,7 @@
             End Get
 
         End Property
-        sPrivate _Phenotype As Phenotype
+        Private _Phenotype As Phenotype
 
 #End Region
 
