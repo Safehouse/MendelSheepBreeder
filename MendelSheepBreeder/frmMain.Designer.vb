@@ -26,7 +26,6 @@ Partial Class frmMain
         Me.tblParents = New System.Windows.Forms.TableLayoutPanel()
         Me.pctParent2 = New System.Windows.Forms.PictureBox()
         Me.pctParent1 = New System.Windows.Forms.PictureBox()
-        Me.pnlParentsGenomeP2 = New System.Windows.Forms.Panel()
         Me.tblParentsGenomeP2 = New System.Windows.Forms.TableLayoutPanel()
         Me.nmrParentsGenome2Hue2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome2Hue1 = New System.Windows.Forms.NumericUpDown()
@@ -40,7 +39,6 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Lightness = New System.Windows.Forms.Label()
         Me.lblParentsGenomeP2Hue = New System.Windows.Forms.Label()
         Me.nmrParentsGenome2Naturalness1 = New System.Windows.Forms.NumericUpDown()
-        Me.pnlParentsGenomeP1 = New System.Windows.Forms.Panel()
         Me.tblParentsGenomeP1 = New System.Windows.Forms.TableLayoutPanel()
         Me.nmrParentsGenome1Lightness2 = New System.Windows.Forms.NumericUpDown()
         Me.nmrParentsGenome1Lightness1 = New System.Windows.Forms.NumericUpDown()
@@ -72,11 +70,15 @@ Partial Class frmMain
         Me.pctChildrenStatsWhite = New System.Windows.Forms.PictureBox()
         Me.pctChildrenStatsLightGrey = New System.Windows.Forms.PictureBox()
         Me.pctChildrenStatsPink = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblParent1Phenotype = New System.Windows.Forms.Label()
+        Me.lblParent2Phenotype = New System.Windows.Forms.Label()
         Me.tblMain.SuspendLayout()
         Me.tblParents.SuspendLayout()
         CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlParentsGenomeP2.SuspendLayout()
         Me.tblParentsGenomeP2.SuspendLayout()
         CType(Me.nmrParentsGenome2Hue2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome2Hue1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,7 +88,6 @@ Partial Class frmMain
         CType(Me.nmrParentsGenome2Colourness1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome2Naturalness2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome2Naturalness1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlParentsGenomeP1.SuspendLayout()
         Me.tblParentsGenomeP1.SuspendLayout()
         CType(Me.nmrParentsGenome1Lightness2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nmrParentsGenome1Lightness1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,6 +114,7 @@ Partial Class frmMain
         CType(Me.pctChildrenStatsWhite, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctChildrenStatsLightGrey, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctChildrenStatsPink, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'tblMain
@@ -127,9 +129,9 @@ Partial Class frmMain
         Me.tblMain.Location = New System.Drawing.Point(0, 0)
         Me.tblMain.Name = "tblMain"
         Me.tblMain.RowCount = 2
-        Me.tblMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 273.0!))
+        Me.tblMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 301.0!))
         Me.tblMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tblMain.Size = New System.Drawing.Size(944, 589)
+        Me.tblMain.Size = New System.Drawing.Size(859, 543)
         Me.tblMain.TabIndex = 0
         '
         'tblParents
@@ -138,17 +140,20 @@ Partial Class frmMain
         Me.tblParents.ColumnCount = 2
         Me.tblParents.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblParents.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblParents.Controls.Add(Me.lblParent2Phenotype, 1, 1)
+        Me.tblParents.Controls.Add(Me.lblParent1Phenotype, 0, 1)
+        Me.tblParents.Controls.Add(Me.tblParentsGenomeP2, 1, 2)
+        Me.tblParents.Controls.Add(Me.tblParentsGenomeP1, 0, 2)
         Me.tblParents.Controls.Add(Me.pctParent2, 1, 0)
         Me.tblParents.Controls.Add(Me.pctParent1, 0, 0)
-        Me.tblParents.Controls.Add(Me.pnlParentsGenomeP2, 1, 1)
-        Me.tblParents.Controls.Add(Me.pnlParentsGenomeP1, 0, 1)
         Me.tblParents.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tblParents.Location = New System.Drawing.Point(3, 3)
         Me.tblParents.Name = "tblParents"
-        Me.tblParents.RowCount = 2
+        Me.tblParents.RowCount = 3
         Me.tblParents.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 155.0!))
+        Me.tblParents.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tblParents.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tblParents.Size = New System.Drawing.Size(316, 267)
+        Me.tblParents.Size = New System.Drawing.Size(316, 295)
         Me.tblParents.TabIndex = 0
         '
         'pctParent2
@@ -173,15 +178,6 @@ Partial Class frmMain
         Me.pctParent1.TabIndex = 1
         Me.pctParent1.TabStop = False
         '
-        'pnlParentsGenomeP2
-        '
-        Me.pnlParentsGenomeP2.Controls.Add(Me.tblParentsGenomeP2)
-        Me.pnlParentsGenomeP2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlParentsGenomeP2.Location = New System.Drawing.Point(162, 164)
-        Me.pnlParentsGenomeP2.Name = "pnlParentsGenomeP2"
-        Me.pnlParentsGenomeP2.Size = New System.Drawing.Size(148, 97)
-        Me.pnlParentsGenomeP2.TabIndex = 2
-        '
         'tblParentsGenomeP2
         '
         Me.tblParentsGenomeP2.ColumnCount = 4
@@ -202,19 +198,19 @@ Partial Class frmMain
         Me.tblParentsGenomeP2.Controls.Add(Me.lblParentsGenomeP2Hue, 2, 2)
         Me.tblParentsGenomeP2.Controls.Add(Me.nmrParentsGenome2Naturalness1, 0, 1)
         Me.tblParentsGenomeP2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblParentsGenomeP2.Location = New System.Drawing.Point(0, 0)
+        Me.tblParentsGenomeP2.Location = New System.Drawing.Point(162, 187)
         Me.tblParentsGenomeP2.Name = "tblParentsGenomeP2"
         Me.tblParentsGenomeP2.RowCount = 4
         Me.tblParentsGenomeP2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tblParentsGenomeP2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblParentsGenomeP2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tblParentsGenomeP2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblParentsGenomeP2.Size = New System.Drawing.Size(148, 97)
+        Me.tblParentsGenomeP2.Size = New System.Drawing.Size(148, 102)
         Me.tblParentsGenomeP2.TabIndex = 1
         '
         'nmrParentsGenome2Hue2
         '
-        Me.nmrParentsGenome2Hue2.Location = New System.Drawing.Point(114, 71)
+        Me.nmrParentsGenome2Hue2.Location = New System.Drawing.Point(114, 74)
         Me.nmrParentsGenome2Hue2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Hue2.Name = "nmrParentsGenome2Hue2"
         Me.nmrParentsGenome2Hue2.Size = New System.Drawing.Size(31, 20)
@@ -222,7 +218,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Hue1
         '
-        Me.nmrParentsGenome2Hue1.Location = New System.Drawing.Point(77, 71)
+        Me.nmrParentsGenome2Hue1.Location = New System.Drawing.Point(77, 74)
         Me.nmrParentsGenome2Hue1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Hue1.Name = "nmrParentsGenome2Hue1"
         Me.nmrParentsGenome2Hue1.Size = New System.Drawing.Size(31, 20)
@@ -230,7 +226,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Lightness2
         '
-        Me.nmrParentsGenome2Lightness2.Location = New System.Drawing.Point(40, 71)
+        Me.nmrParentsGenome2Lightness2.Location = New System.Drawing.Point(40, 74)
         Me.nmrParentsGenome2Lightness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Lightness2.Name = "nmrParentsGenome2Lightness2"
         Me.nmrParentsGenome2Lightness2.Size = New System.Drawing.Size(31, 20)
@@ -238,7 +234,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome2Lightness1
         '
-        Me.nmrParentsGenome2Lightness1.Location = New System.Drawing.Point(3, 71)
+        Me.nmrParentsGenome2Lightness1.Location = New System.Drawing.Point(3, 74)
         Me.nmrParentsGenome2Lightness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome2Lightness1.Name = "nmrParentsGenome2Lightness1"
         Me.nmrParentsGenome2Lightness1.Size = New System.Drawing.Size(31, 20)
@@ -295,7 +291,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Lightness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP2Lightness.AutoSize = True
         Me.tblParentsGenomeP2.SetColumnSpan(Me.lblParentsGenomeP2Lightness, 2)
-        Me.lblParentsGenomeP2Lightness.Location = New System.Drawing.Point(11, 55)
+        Me.lblParentsGenomeP2Lightness.Location = New System.Drawing.Point(11, 58)
         Me.lblParentsGenomeP2Lightness.Name = "lblParentsGenomeP2Lightness"
         Me.lblParentsGenomeP2Lightness.Size = New System.Drawing.Size(52, 13)
         Me.lblParentsGenomeP2Lightness.TabIndex = 3
@@ -306,7 +302,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP2Hue.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP2Hue.AutoSize = True
         Me.tblParentsGenomeP2.SetColumnSpan(Me.lblParentsGenomeP2Hue, 2)
-        Me.lblParentsGenomeP2Hue.Location = New System.Drawing.Point(97, 55)
+        Me.lblParentsGenomeP2Hue.Location = New System.Drawing.Point(97, 58)
         Me.lblParentsGenomeP2Hue.Name = "lblParentsGenomeP2Hue"
         Me.lblParentsGenomeP2Hue.Size = New System.Drawing.Size(27, 13)
         Me.lblParentsGenomeP2Hue.TabIndex = 4
@@ -319,15 +315,6 @@ Partial Class frmMain
         Me.nmrParentsGenome2Naturalness1.Name = "nmrParentsGenome2Naturalness1"
         Me.nmrParentsGenome2Naturalness1.Size = New System.Drawing.Size(31, 20)
         Me.nmrParentsGenome2Naturalness1.TabIndex = 5
-        '
-        'pnlParentsGenomeP1
-        '
-        Me.pnlParentsGenomeP1.Controls.Add(Me.tblParentsGenomeP1)
-        Me.pnlParentsGenomeP1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlParentsGenomeP1.Location = New System.Drawing.Point(6, 164)
-        Me.pnlParentsGenomeP1.Name = "pnlParentsGenomeP1"
-        Me.pnlParentsGenomeP1.Size = New System.Drawing.Size(147, 97)
-        Me.pnlParentsGenomeP1.TabIndex = 3
         '
         'tblParentsGenomeP1
         '
@@ -349,7 +336,7 @@ Partial Class frmMain
         Me.tblParentsGenomeP1.Controls.Add(Me.nmrParentsGenome1Naturalness2, 1, 1)
         Me.tblParentsGenomeP1.Controls.Add(Me.nmrParentsGenome1Colourness2, 3, 1)
         Me.tblParentsGenomeP1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblParentsGenomeP1.Location = New System.Drawing.Point(0, 0)
+        Me.tblParentsGenomeP1.Location = New System.Drawing.Point(6, 187)
         Me.tblParentsGenomeP1.Name = "tblParentsGenomeP1"
         Me.tblParentsGenomeP1.RowCount = 4
         Me.tblParentsGenomeP1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -357,12 +344,12 @@ Partial Class frmMain
         Me.tblParentsGenomeP1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tblParentsGenomeP1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tblParentsGenomeP1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.tblParentsGenomeP1.Size = New System.Drawing.Size(147, 97)
+        Me.tblParentsGenomeP1.Size = New System.Drawing.Size(147, 102)
         Me.tblParentsGenomeP1.TabIndex = 0
         '
         'nmrParentsGenome1Lightness2
         '
-        Me.nmrParentsGenome1Lightness2.Location = New System.Drawing.Point(39, 71)
+        Me.nmrParentsGenome1Lightness2.Location = New System.Drawing.Point(39, 74)
         Me.nmrParentsGenome1Lightness2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Lightness2.Name = "nmrParentsGenome1Lightness2"
         Me.nmrParentsGenome1Lightness2.Size = New System.Drawing.Size(30, 20)
@@ -370,7 +357,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Lightness1
         '
-        Me.nmrParentsGenome1Lightness1.Location = New System.Drawing.Point(3, 71)
+        Me.nmrParentsGenome1Lightness1.Location = New System.Drawing.Point(3, 74)
         Me.nmrParentsGenome1Lightness1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Lightness1.Name = "nmrParentsGenome1Lightness1"
         Me.nmrParentsGenome1Lightness1.Size = New System.Drawing.Size(30, 20)
@@ -378,7 +365,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Hue2
         '
-        Me.nmrParentsGenome1Hue2.Location = New System.Drawing.Point(111, 71)
+        Me.nmrParentsGenome1Hue2.Location = New System.Drawing.Point(111, 74)
         Me.nmrParentsGenome1Hue2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Hue2.Name = "nmrParentsGenome1Hue2"
         Me.nmrParentsGenome1Hue2.Size = New System.Drawing.Size(33, 20)
@@ -386,7 +373,7 @@ Partial Class frmMain
         '
         'nmrParentsGenome1Hue1
         '
-        Me.nmrParentsGenome1Hue1.Location = New System.Drawing.Point(75, 71)
+        Me.nmrParentsGenome1Hue1.Location = New System.Drawing.Point(75, 74)
         Me.nmrParentsGenome1Hue1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nmrParentsGenome1Hue1.Name = "nmrParentsGenome1Hue1"
         Me.nmrParentsGenome1Hue1.Size = New System.Drawing.Size(30, 20)
@@ -419,7 +406,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP1Lightness.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP1Lightness.AutoSize = True
         Me.tblParentsGenomeP1.SetColumnSpan(Me.lblParentsGenomeP1Lightness, 2)
-        Me.lblParentsGenomeP1Lightness.Location = New System.Drawing.Point(10, 55)
+        Me.lblParentsGenomeP1Lightness.Location = New System.Drawing.Point(10, 58)
         Me.lblParentsGenomeP1Lightness.Name = "lblParentsGenomeP1Lightness"
         Me.lblParentsGenomeP1Lightness.Size = New System.Drawing.Size(52, 13)
         Me.lblParentsGenomeP1Lightness.TabIndex = 3
@@ -430,7 +417,7 @@ Partial Class frmMain
         Me.lblParentsGenomeP1Hue.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.lblParentsGenomeP1Hue.AutoSize = True
         Me.tblParentsGenomeP1.SetColumnSpan(Me.lblParentsGenomeP1Hue, 2)
-        Me.lblParentsGenomeP1Hue.Location = New System.Drawing.Point(96, 55)
+        Me.lblParentsGenomeP1Hue.Location = New System.Drawing.Point(96, 58)
         Me.lblParentsGenomeP1Hue.Name = "lblParentsGenomeP1Hue"
         Me.lblParentsGenomeP1Hue.Size = New System.Drawing.Size(27, 13)
         Me.lblParentsGenomeP1Hue.TabIndex = 4
@@ -474,9 +461,9 @@ Partial Class frmMain
         Me.flwChildrenOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tblMain.SetColumnSpan(Me.flwChildrenOutput, 2)
         Me.flwChildrenOutput.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.flwChildrenOutput.Location = New System.Drawing.Point(3, 276)
+        Me.flwChildrenOutput.Location = New System.Drawing.Point(3, 304)
         Me.flwChildrenOutput.Name = "flwChildrenOutput"
-        Me.flwChildrenOutput.Size = New System.Drawing.Size(938, 310)
+        Me.flwChildrenOutput.Size = New System.Drawing.Size(853, 236)
         Me.flwChildrenOutput.TabIndex = 1
         '
         'tblChildrenStatistics
@@ -508,6 +495,7 @@ Partial Class frmMain
         Me.tblChildrenStatistics.Controls.Add(Me.pctChildrenStatsGrey, 6, 2)
         Me.tblChildrenStatistics.Controls.Add(Me.pctChildrenStatsWhite, 7, 2)
         Me.tblChildrenStatistics.Controls.Add(Me.pctChildrenStatsYellow, 7, 0)
+        Me.tblChildrenStatistics.Controls.Add(Me.Panel1, 0, 1)
         Me.tblChildrenStatistics.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tblChildrenStatistics.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
         Me.tblChildrenStatistics.Location = New System.Drawing.Point(325, 3)
@@ -517,16 +505,16 @@ Partial Class frmMain
         Me.tblChildrenStatistics.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.tblChildrenStatistics.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.tblChildrenStatistics.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.tblChildrenStatistics.Size = New System.Drawing.Size(616, 267)
+        Me.tblChildrenStatistics.Size = New System.Drawing.Size(531, 295)
         Me.tblChildrenStatistics.TabIndex = 2
         '
         'pctChildrenStatsYellow
         '
         Me.pctChildrenStatsYellow.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsYellow.Image = Global.My.Resources.Resources.sheep_yellow
-        Me.pctChildrenStatsYellow.Location = New System.Drawing.Point(536, 4)
+        Me.pctChildrenStatsYellow.Location = New System.Drawing.Point(466, 4)
         Me.pctChildrenStatsYellow.Name = "pctChildrenStatsYellow"
-        Me.pctChildrenStatsYellow.Size = New System.Drawing.Size(76, 59)
+        Me.pctChildrenStatsYellow.Size = New System.Drawing.Size(61, 66)
         Me.pctChildrenStatsYellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsYellow.TabIndex = 8
         Me.pctChildrenStatsYellow.TabStop = False
@@ -535,9 +523,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsLime.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsLime.Image = Global.My.Resources.Resources.sheep_lime
-        Me.pctChildrenStatsLime.Location = New System.Drawing.Point(460, 4)
+        Me.pctChildrenStatsLime.Location = New System.Drawing.Point(400, 4)
         Me.pctChildrenStatsLime.Name = "pctChildrenStatsLime"
-        Me.pctChildrenStatsLime.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsLime.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsLime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsLime.TabIndex = 6
         Me.pctChildrenStatsLime.TabStop = False
@@ -546,9 +534,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsCyan.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsCyan.Image = Global.My.Resources.Resources.sheep_cyan
-        Me.pctChildrenStatsCyan.Location = New System.Drawing.Point(384, 4)
+        Me.pctChildrenStatsCyan.Location = New System.Drawing.Point(334, 4)
         Me.pctChildrenStatsCyan.Name = "pctChildrenStatsCyan"
-        Me.pctChildrenStatsCyan.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsCyan.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsCyan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsCyan.TabIndex = 5
         Me.pctChildrenStatsCyan.TabStop = False
@@ -557,9 +545,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsLightBlue.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsLightBlue.Image = Global.My.Resources.Resources.sheep_lightblue
-        Me.pctChildrenStatsLightBlue.Location = New System.Drawing.Point(308, 4)
+        Me.pctChildrenStatsLightBlue.Location = New System.Drawing.Point(268, 4)
         Me.pctChildrenStatsLightBlue.Name = "pctChildrenStatsLightBlue"
-        Me.pctChildrenStatsLightBlue.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsLightBlue.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsLightBlue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsLightBlue.TabIndex = 4
         Me.pctChildrenStatsLightBlue.TabStop = False
@@ -568,9 +556,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsOrange.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsOrange.Image = Global.My.Resources.Resources.sheep_orange
-        Me.pctChildrenStatsOrange.Location = New System.Drawing.Point(232, 4)
+        Me.pctChildrenStatsOrange.Location = New System.Drawing.Point(202, 4)
         Me.pctChildrenStatsOrange.Name = "pctChildrenStatsOrange"
-        Me.pctChildrenStatsOrange.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsOrange.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsOrange.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsOrange.TabIndex = 3
         Me.pctChildrenStatsOrange.TabStop = False
@@ -579,9 +567,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsGreen.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsGreen.Image = Global.My.Resources.Resources.sheep_green
-        Me.pctChildrenStatsGreen.Location = New System.Drawing.Point(156, 4)
+        Me.pctChildrenStatsGreen.Location = New System.Drawing.Point(136, 4)
         Me.pctChildrenStatsGreen.Name = "pctChildrenStatsGreen"
-        Me.pctChildrenStatsGreen.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsGreen.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsGreen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsGreen.TabIndex = 2
         Me.pctChildrenStatsGreen.TabStop = False
@@ -590,9 +578,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsPurple.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsPurple.Image = Global.My.Resources.Resources.sheep_purple
-        Me.pctChildrenStatsPurple.Location = New System.Drawing.Point(80, 4)
+        Me.pctChildrenStatsPurple.Location = New System.Drawing.Point(70, 4)
         Me.pctChildrenStatsPurple.Name = "pctChildrenStatsPurple"
-        Me.pctChildrenStatsPurple.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsPurple.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsPurple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsPurple.TabIndex = 1
         Me.pctChildrenStatsPurple.TabStop = False
@@ -603,7 +591,7 @@ Partial Class frmMain
         Me.pctChildrenStatsBlue.Image = Global.My.Resources.Resources.sheep_blue
         Me.pctChildrenStatsBlue.Location = New System.Drawing.Point(4, 4)
         Me.pctChildrenStatsBlue.Name = "pctChildrenStatsBlue"
-        Me.pctChildrenStatsBlue.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsBlue.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsBlue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsBlue.TabIndex = 0
         Me.pctChildrenStatsBlue.TabStop = False
@@ -612,9 +600,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsBrown.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsBrown.Image = Global.My.Resources.Resources.sheep_brown
-        Me.pctChildrenStatsBrown.Location = New System.Drawing.Point(4, 136)
+        Me.pctChildrenStatsBrown.Location = New System.Drawing.Point(4, 150)
         Me.pctChildrenStatsBrown.Name = "pctChildrenStatsBrown"
-        Me.pctChildrenStatsBrown.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsBrown.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsBrown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsBrown.TabIndex = 17
         Me.pctChildrenStatsBrown.TabStop = False
@@ -623,9 +611,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsMagenta.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsMagenta.Image = Global.My.Resources.Resources.sheep_magenta
-        Me.pctChildrenStatsMagenta.Location = New System.Drawing.Point(80, 136)
+        Me.pctChildrenStatsMagenta.Location = New System.Drawing.Point(70, 150)
         Me.pctChildrenStatsMagenta.Name = "pctChildrenStatsMagenta"
-        Me.pctChildrenStatsMagenta.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsMagenta.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsMagenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsMagenta.TabIndex = 18
         Me.pctChildrenStatsMagenta.TabStop = False
@@ -634,9 +622,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsBlack.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsBlack.Image = Global.My.Resources.Resources.sheep_black
-        Me.pctChildrenStatsBlack.Location = New System.Drawing.Point(156, 136)
+        Me.pctChildrenStatsBlack.Location = New System.Drawing.Point(136, 150)
         Me.pctChildrenStatsBlack.Name = "pctChildrenStatsBlack"
-        Me.pctChildrenStatsBlack.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsBlack.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsBlack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsBlack.TabIndex = 19
         Me.pctChildrenStatsBlack.TabStop = False
@@ -645,9 +633,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsRed.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsRed.Image = Global.My.Resources.Resources.sheep_red
-        Me.pctChildrenStatsRed.Location = New System.Drawing.Point(308, 136)
+        Me.pctChildrenStatsRed.Location = New System.Drawing.Point(268, 150)
         Me.pctChildrenStatsRed.Name = "pctChildrenStatsRed"
-        Me.pctChildrenStatsRed.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsRed.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsRed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsRed.TabIndex = 21
         Me.pctChildrenStatsRed.TabStop = False
@@ -656,9 +644,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsGrey.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsGrey.Image = Global.My.Resources.Resources.sheep_grey
-        Me.pctChildrenStatsGrey.Location = New System.Drawing.Point(460, 136)
+        Me.pctChildrenStatsGrey.Location = New System.Drawing.Point(400, 150)
         Me.pctChildrenStatsGrey.Name = "pctChildrenStatsGrey"
-        Me.pctChildrenStatsGrey.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsGrey.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsGrey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsGrey.TabIndex = 24
         Me.pctChildrenStatsGrey.TabStop = False
@@ -667,9 +655,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsWhite.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsWhite.Image = Global.My.Resources.Resources.sheep_white
-        Me.pctChildrenStatsWhite.Location = New System.Drawing.Point(536, 136)
+        Me.pctChildrenStatsWhite.Location = New System.Drawing.Point(466, 150)
         Me.pctChildrenStatsWhite.Name = "pctChildrenStatsWhite"
-        Me.pctChildrenStatsWhite.Size = New System.Drawing.Size(76, 59)
+        Me.pctChildrenStatsWhite.Size = New System.Drawing.Size(61, 66)
         Me.pctChildrenStatsWhite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsWhite.TabIndex = 25
         Me.pctChildrenStatsWhite.TabStop = False
@@ -678,9 +666,9 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsLightGrey.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsLightGrey.Image = Global.My.Resources.Resources.sheep_lightgrey
-        Me.pctChildrenStatsLightGrey.Location = New System.Drawing.Point(232, 136)
+        Me.pctChildrenStatsLightGrey.Location = New System.Drawing.Point(202, 150)
         Me.pctChildrenStatsLightGrey.Name = "pctChildrenStatsLightGrey"
-        Me.pctChildrenStatsLightGrey.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsLightGrey.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsLightGrey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsLightGrey.TabIndex = 32
         Me.pctChildrenStatsLightGrey.TabStop = False
@@ -689,26 +677,73 @@ Partial Class frmMain
         '
         Me.pctChildrenStatsPink.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctChildrenStatsPink.Image = Global.My.Resources.Resources.sheep_pink
-        Me.pctChildrenStatsPink.Location = New System.Drawing.Point(384, 136)
+        Me.pctChildrenStatsPink.Location = New System.Drawing.Point(334, 150)
         Me.pctChildrenStatsPink.Name = "pctChildrenStatsPink"
-        Me.pctChildrenStatsPink.Size = New System.Drawing.Size(69, 59)
+        Me.pctChildrenStatsPink.Size = New System.Drawing.Size(59, 66)
         Me.pctChildrenStatsPink.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctChildrenStatsPink.TabIndex = 33
         Me.pctChildrenStatsPink.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(3, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(3, 10)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Label1"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Location = New System.Drawing.Point(4, 77)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(59, 59)
+        Me.Panel1.TabIndex = 34
+        '
+        'lblParent1Phenotype
+        '
+        Me.lblParent1Phenotype.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.lblParent1Phenotype.AutoSize = True
+        Me.lblParent1Phenotype.Location = New System.Drawing.Point(6, 164)
+        Me.lblParent1Phenotype.Name = "lblParent1Phenotype"
+        Me.lblParent1Phenotype.Size = New System.Drawing.Size(39, 13)
+        Me.lblParent1Phenotype.TabIndex = 0
+        Me.lblParent1Phenotype.Text = "Label3"
+        '
+        'lblParent2Phenotype
+        '
+        Me.lblParent2Phenotype.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.lblParent2Phenotype.AutoSize = True
+        Me.lblParent2Phenotype.Location = New System.Drawing.Point(162, 164)
+        Me.lblParent2Phenotype.Name = "lblParent2Phenotype"
+        Me.lblParent2Phenotype.Size = New System.Drawing.Size(39, 13)
+        Me.lblParent2Phenotype.TabIndex = 1
+        Me.lblParent2Phenotype.Text = "Label4"
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(944, 589)
+        Me.ClientSize = New System.Drawing.Size(859, 543)
         Me.Controls.Add(Me.tblMain)
         Me.Name = "frmMain"
         Me.Text = "Mendel Sheep Breeder"
         Me.tblMain.ResumeLayout(False)
         Me.tblParents.ResumeLayout(False)
+        Me.tblParents.PerformLayout()
         CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctParent1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlParentsGenomeP2.ResumeLayout(False)
         Me.tblParentsGenomeP2.ResumeLayout(False)
         Me.tblParentsGenomeP2.PerformLayout()
         CType(Me.nmrParentsGenome2Hue2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -719,7 +754,6 @@ Partial Class frmMain
         CType(Me.nmrParentsGenome2Colourness1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrParentsGenome2Naturalness2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nmrParentsGenome2Naturalness1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlParentsGenomeP1.ResumeLayout(False)
         Me.tblParentsGenomeP1.ResumeLayout(False)
         Me.tblParentsGenomeP1.PerformLayout()
         CType(Me.nmrParentsGenome1Lightness2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -747,16 +781,16 @@ Partial Class frmMain
         CType(Me.pctChildrenStatsWhite, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctChildrenStatsLightGrey, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctChildrenStatsPink, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents tblMain As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents tblParents As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents pnlParentsGenomeP1 As System.Windows.Forms.Panel
     Friend WithEvents tblParentsGenomeP1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents lblParentsGenomeP1Naturalness As System.Windows.Forms.Label
     Friend WithEvents lblParentsGenomeP1Colourness As System.Windows.Forms.Label
-    Friend WithEvents pnlParentsGenomeP2 As System.Windows.Forms.Panel
     Friend WithEvents tblParentsGenomeP2 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents lblParentsGenomeP2Naturalness As System.Windows.Forms.Label
     Friend WithEvents lblParentsGenomeP2Colourness As System.Windows.Forms.Label
@@ -800,5 +834,10 @@ Partial Class frmMain
     Friend WithEvents pctChildrenStatsLightGrey As System.Windows.Forms.PictureBox
     Friend WithEvents pctChildrenStatsPurple As System.Windows.Forms.PictureBox
     Friend WithEvents pctChildrenStatsPink As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblParent2Phenotype As System.Windows.Forms.Label
+    Friend WithEvents lblParent1Phenotype As System.Windows.Forms.Label
 
 End Class

@@ -79,6 +79,7 @@ Public Class frmMain
         UpdateChildren()
 
         UpdateParentsImages()
+        UpdateParentsLabels()
 
         If DEBUG = True Then MsgBox(Parent1.Genome.ToString & vbCrLf & Parent2.Genome.ToString)
 
@@ -160,6 +161,17 @@ Public Class frmMain
             Case Phenotype.Yellow
                 pctParent2.Image = My.Resources.sheep_yellow
         End Select
+
+    End Sub
+
+    ''' <summary>
+    ''' Updates the labels which show the phenotype of the parents.
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub UpdateParentsLabels()
+
+        lblParent1Phenotype.Text = Parent1.Phenotype.ToString
+        lblParent2Phenotype.Text = Parent2.Phenotype.ToString
 
     End Sub
 
