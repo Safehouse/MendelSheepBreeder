@@ -15,9 +15,7 @@
             End Set
 
         End Property
-
         Private _Naturalness As Allele
-
 
         Friend Property Colourness As Allele
 
@@ -30,9 +28,7 @@
             End Set
 
         End Property
-
         Private _Colourness As Allele
-
 
         Friend Property Lightness As Allele
 
@@ -45,9 +41,7 @@
             End Set
 
         End Property
-
         Private _Lightness As Allele
-
 
         Friend Property Hue As Allele
 
@@ -60,7 +54,6 @@
             End Set
 
         End Property
-
         Private _Hue As Allele
 
 #End Region

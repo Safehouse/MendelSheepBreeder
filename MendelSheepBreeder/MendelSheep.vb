@@ -16,9 +16,7 @@
             End Set
 
         End Property
-
         Private _Genome As Genome
-
 
         Friend ReadOnly Property Phenotype As Phenotype
 
@@ -27,8 +25,7 @@
             End Get
 
         End Property
-
-        Private _Phenotype As Phenotype
+        sPrivate _Phenotype As Phenotype
 
 #End Region
 

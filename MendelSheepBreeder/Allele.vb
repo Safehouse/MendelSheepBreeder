@@ -44,9 +44,7 @@
             End Set
 
         End Property
-
         Private _Gene2 As Byte
-
 
         Friend Property Name As String
 
@@ -59,7 +57,6 @@
             End Set
 
         End Property
-
         Private _Name As String
 
 #End Region
