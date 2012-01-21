@@ -187,6 +187,7 @@ Public Class frmMain
         ListOfChildren = ReproductionAssistant.GetChildren(Parent1, Parent2)
 
         UpdateChildrenImages()
+        UpdateChildrenStatistics()
 
     End Sub
 
@@ -255,6 +256,8 @@ Public Class frmMain
     ''' </summary>
     ''' <remarks></remarks>
     Private Sub UpdateChildrenStatistics()
+
+
 
     End Sub
 
