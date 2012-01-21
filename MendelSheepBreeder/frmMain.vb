@@ -5,6 +5,8 @@ Public Class frmMain
     ' Order of genomes is: Naturalness -Colourness - Lightness - Hue.
 
     Friend Const DEBUG As Boolean = False
+    ' The amount of possible different combinations genome-wise. 2^8
+    Friend Const NumberOfPossibilities As Integer = 256
 
     Private Parent1 As New MendelSheep
     Private Parent2 As New MendelSheep
@@ -82,7 +84,6 @@ Public Class frmMain
         UpdateParentsLabels()
 
         If DEBUG = True Then MsgBox(Parent1.Genome.ToString & vbCrLf & Parent2.Genome.ToString)
-
 
     End Sub
 
@@ -246,6 +247,14 @@ Public Class frmMain
             flwChildrenOutput.Controls.Add(pctChild)
 
         Next
+
+    End Sub
+
+    ''' <summary>
+    ''' Updates the statistics containing the percentage of each possible phenotype.
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub UpdateChildrenStatistics()
 
     End Sub
 

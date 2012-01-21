@@ -70,11 +70,12 @@ Partial Class frmMain
         Me.pctChildrenStatsWhite = New System.Windows.Forms.PictureBox()
         Me.pctChildrenStatsLightGrey = New System.Windows.Forms.PictureBox()
         Me.pctChildrenStatsPink = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblParent1Phenotype = New System.Windows.Forms.Label()
         Me.lblParent2Phenotype = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.tblMain.SuspendLayout()
         Me.tblParents.SuspendLayout()
         CType(Me.pctParent2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,7 +115,7 @@ Partial Class frmMain
         CType(Me.pctChildrenStatsWhite, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctChildrenStatsLightGrey, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctChildrenStatsPink, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'tblMain
@@ -495,7 +496,7 @@ Partial Class frmMain
         Me.tblChildrenStatistics.Controls.Add(Me.pctChildrenStatsGrey, 6, 2)
         Me.tblChildrenStatistics.Controls.Add(Me.pctChildrenStatsWhite, 7, 2)
         Me.tblChildrenStatistics.Controls.Add(Me.pctChildrenStatsYellow, 7, 0)
-        Me.tblChildrenStatistics.Controls.Add(Me.Panel1, 0, 1)
+        Me.tblChildrenStatistics.Controls.Add(Me.TableLayoutPanel1, 0, 1)
         Me.tblChildrenStatistics.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tblChildrenStatistics.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
         Me.tblChildrenStatistics.Location = New System.Drawing.Point(325, 3)
@@ -684,32 +685,15 @@ Partial Class frmMain
         Me.pctChildrenStatsPink.TabIndex = 33
         Me.pctChildrenStatsPink.TabStop = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 32)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
-        '
         'Label2
         '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 10)
+        Me.Label2.Location = New System.Drawing.Point(4, 4)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Label1"
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(4, 77)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(59, 59)
-        Me.Panel1.TabIndex = 34
         '
         'lblParent1Phenotype
         '
@@ -730,6 +714,44 @@ Partial Class frmMain
         Me.lblParent2Phenotype.Size = New System.Drawing.Size(39, 13)
         Me.lblParent2Phenotype.TabIndex = 1
         Me.lblParent2Phenotype.Text = "Label4"
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 2)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(4, 77)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 3
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(59, 66)
+        Me.TableLayoutPanel1.TabIndex = 34
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(4, 25)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Label1"
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(4, 47)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Label1"
         '
         'frmMain
         '
@@ -781,8 +803,8 @@ Partial Class frmMain
         CType(Me.pctChildrenStatsWhite, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctChildrenStatsLightGrey, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pctChildrenStatsPink, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -834,10 +856,11 @@ Partial Class frmMain
     Friend WithEvents pctChildrenStatsLightGrey As System.Windows.Forms.PictureBox
     Friend WithEvents pctChildrenStatsPurple As System.Windows.Forms.PictureBox
     Friend WithEvents pctChildrenStatsPink As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lblParent2Phenotype As System.Windows.Forms.Label
     Friend WithEvents lblParent1Phenotype As System.Windows.Forms.Label
+    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 
 End Class
