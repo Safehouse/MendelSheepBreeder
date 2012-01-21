@@ -95,6 +95,7 @@
     </Compile>
     <Compile Include="Phenotype.vb" />
     <Compile Include="PhenotypeMap.vb" />
+    <Compile Include="SheepStatistic.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMain.resx">
