@@ -20,26 +20,26 @@ Public Class frmMain
     ''' <remarks></remarks>
     Private Sub UpdateParents()
 
-        Dim Naturalness As New Allele
-        Dim Colourness As New Allele
-        Dim Lightness As New Allele
-        Dim Hue As New Allele
+        Dim Naturalness As New Gene
+        Dim Colourness As New Gene
+        Dim Lightness As New Gene
+        Dim Hue As New Gene
 
         Dim Genome As New Genome
 
 
         ' Get the specified information for the first parent.
-        Naturalness.Gene1 = CByte(nmrParentsGenome1Naturalness1.Value)
-        Naturalness.Gene2 = CByte(nmrParentsGenome1Naturalness2.Value)
+        Naturalness.Allele1 = CByte(nmrParentsGenome1Naturalness1.Value)
+        Naturalness.Allele2 = CByte(nmrParentsGenome1Naturalness2.Value)
 
-        Colourness.Gene1 = CByte(nmrParentsGenome1Colourness1.Value)
-        Colourness.Gene2 = CByte(nmrParentsGenome1Colourness2.Value)
+        Colourness.Allele1 = CByte(nmrParentsGenome1Colourness1.Value)
+        Colourness.Allele2 = CByte(nmrParentsGenome1Colourness2.Value)
 
-        Lightness.Gene1 = CByte(nmrParentsGenome1Lightness1.Value)
-        Lightness.Gene2 = CByte(nmrParentsGenome1Lightness2.Value)
+        Lightness.Allele1 = CByte(nmrParentsGenome1Lightness1.Value)
+        Lightness.Allele2 = CByte(nmrParentsGenome1Lightness2.Value)
 
-        Hue.Gene1 = CByte(nmrParentsGenome1Hue1.Value)
-        Hue.Gene2 = CByte(nmrParentsGenome1Hue2.Value)
+        Hue.Allele1 = CByte(nmrParentsGenome1Hue1.Value)
+        Hue.Allele2 = CByte(nmrParentsGenome1Hue2.Value)
 
         Genome.Naturalness = Naturalness
         Genome.Colourness = Colourness
@@ -50,25 +50,25 @@ Public Class frmMain
 
 
         ' Create new objects, since the genome of the 1st parent would be set to the one of the second parent if you wouldn't do this.
-        Naturalness = New Allele
-        Colourness = New Allele
-        Lightness = New Allele
-        Hue = New Allele
+        Naturalness = New Gene
+        Colourness = New Gene
+        Lightness = New Gene
+        Hue = New Gene
 
         Genome = New Genome
 
         ' Get the specified information for the second parent.
-        Naturalness.Gene1 = CByte(nmrParentsGenome2Naturalness1.Value)
-        Naturalness.Gene2 = CByte(nmrParentsGenome2Naturalness2.Value)
+        Naturalness.Allele1 = CByte(nmrParentsGenome2Naturalness1.Value)
+        Naturalness.Allele2 = CByte(nmrParentsGenome2Naturalness2.Value)
 
-        Colourness.Gene1 = CByte(nmrParentsGenome2Colourness1.Value)
-        Colourness.Gene2 = CByte(nmrParentsGenome2Colourness2.Value)
+        Colourness.Allele1 = CByte(nmrParentsGenome2Colourness1.Value)
+        Colourness.Allele2 = CByte(nmrParentsGenome2Colourness2.Value)
 
-        Lightness.Gene1 = CByte(nmrParentsGenome2Lightness1.Value)
-        Lightness.Gene2 = CByte(nmrParentsGenome2Lightness2.Value)
+        Lightness.Allele1 = CByte(nmrParentsGenome2Lightness1.Value)
+        Lightness.Allele2 = CByte(nmrParentsGenome2Lightness2.Value)
 
-        Hue.Gene1 = CByte(nmrParentsGenome2Hue1.Value)
-        Hue.Gene2 = CByte(nmrParentsGenome2Hue2.Value)
+        Hue.Allele1 = CByte(nmrParentsGenome2Hue1.Value)
+        Hue.Allele2 = CByte(nmrParentsGenome2Hue2.Value)
 
         Genome.Naturalness = Naturalness
         Genome.Colourness = Colourness

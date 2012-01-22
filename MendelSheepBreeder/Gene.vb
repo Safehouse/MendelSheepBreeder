@@ -1,10 +1,10 @@
 ﻿Namespace ch.Morrolan.Minecraft.MendelSheepBreeder
 
-    Friend Class Allele
+    Friend Class Gene
 
 #Region "Properties"
 
-        Friend Property Gene1 As Byte
+        Friend Property Allele1 As Byte
 
             Get
                 Return _Gene1
@@ -26,7 +26,7 @@
         Private _Gene1 As Byte
 
 
-        Friend Property Gene2 As Byte
+        Friend Property Allele2 As Byte
 
             Get
                 Return _Gene2
@@ -70,8 +70,8 @@
 
         Friend Sub New(ByVal Gene1 As Byte, ByVal Gene2 As Byte)
 
-            Me.Gene1 = Gene1
-            Me.Gene2 = Gene2
+            Me.Allele1 = Gene1
+            Me.Allele2 = Gene2
 
         End Sub
 
@@ -81,7 +81,7 @@
 
             Dim John As String
 
-            John = Name & ": " & CStr(Gene1) & "," & CStr(Gene2)
+            John = Name & ": " & CStr(Allele1) & "," & CStr(Allele2)
             Return John
 
         End Function

@@ -4,57 +4,57 @@
 
 #Region "Properties"
 
-        Friend Property Naturalness As Allele
+        Friend Property Naturalness As Gene
 
             Get
                 Return _Naturalness
             End Get
 
-            Set(value As Allele)
+            Set(value As Gene)
                 _Naturalness = value
             End Set
 
         End Property
-        Private _Naturalness As Allele
+        Private _Naturalness As Gene
 
-        Friend Property Colourness As Allele
+        Friend Property Colourness As Gene
 
             Get
                 Return _Colourness
             End Get
 
-            Set(value As Allele)
+            Set(value As Gene)
                 _Colourness = value
             End Set
 
         End Property
-        Private _Colourness As Allele
+        Private _Colourness As Gene
 
-        Friend Property Lightness As Allele
+        Friend Property Lightness As Gene
 
             Get
                 Return _Lightness
             End Get
 
-            Set(value As Allele)
+            Set(value As Gene)
                 _Lightness = value
             End Set
 
         End Property
-        Private _Lightness As Allele
+        Private _Lightness As Gene
 
-        Friend Property Hue As Allele
+        Friend Property Hue As Gene
 
             Get
                 Return _Hue
             End Get
 
-            Set(value As Allele)
+            Set(value As Gene)
                 _Hue = value
             End Set
 
         End Property
-        Private _Hue As Allele
+        Private _Hue As Gene
 
 #End Region
 
@@ -73,7 +73,7 @@
 
         End Sub
 
-        Friend Sub New(ByVal Naturalness As Allele, ByVal Colourness As Allele, ByVal Lightness As Allele, ByVal Hue As Allele)
+        Friend Sub New(ByVal Naturalness As Gene, ByVal Colourness As Gene, ByVal Lightness As Gene, ByVal Hue As Gene)
 
             Me.Naturalness = Naturalness
             Me.Colourness = Colourness

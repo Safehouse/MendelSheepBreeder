@@ -43,10 +43,10 @@
             Dim ResultingLightness As Byte
             Dim ResultingHue As Byte
 
-            ResultingNaturalness = Genome.Naturalness.Gene1 Or Genome.Naturalness.Gene2
-            ResultingColourness = Genome.Colourness.Gene1 Or Genome.Colourness.Gene2
-            ResultingLightness = Genome.Lightness.Gene1 Or Genome.Lightness.Gene2
-            ResultingHue = Genome.Hue.Gene1 Or Genome.Hue.Gene2
+            ResultingNaturalness = Genome.Naturalness.Allele1 Or Genome.Naturalness.Allele2
+            ResultingColourness = Genome.Colourness.Allele1 Or Genome.Colourness.Allele2
+            ResultingLightness = Genome.Lightness.Allele1 Or Genome.Lightness.Allele2
+            ResultingHue = Genome.Hue.Allele1 Or Genome.Hue.Allele2
 
             Dim Phenotype As New Phenotype
             Phenotype = _Map(ResultingNaturalness, ResultingColourness, ResultingLightness, ResultingHue)
