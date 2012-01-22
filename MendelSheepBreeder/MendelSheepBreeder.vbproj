@@ -67,7 +67,7 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Allele.vb" />
+    <Compile Include="Gene.vb" />
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
